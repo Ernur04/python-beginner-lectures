@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="nav.video">Видеоурок</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/videolesson.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="page-title-placeholder">
+            <h2 data-i18="video.title">Видеоуроки</h2>
+            <p data-i18="video.description">Полный курс Python — 22 видеоурока.</p>
+            <p class="video-source">
+                Источник:
+                <a href="https://www.youtube.com/@itproger" target="_blank">Школа itProger / Программирование</a>
+            </p>
+        </section>
+
+        <section class="video-row">
+            <!-- 1 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/34Rp6KVGIEM" title="Python Tutorial #1"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson1">Урок 1: Программирование на Питон для начинающих</h3>
+            </article>
+
+            <!-- 2 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/CfqX2_xY8VQ" title="Python Tutorial #2"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson2">Урок 2: Установка среды разработки</h3>
+            </article>
+        </section>
+
+        <section class="video-row">
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/ML5tP8m6SHw" title="Python Tutorial #3"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson3">Урок 3: Базовые операции в языке Python</h3>
+            </article>
+
+            <!-- 4 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/DZvNZ9l9NT4" title="Python Tutorial #4"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson4">Урок 4: Переменные и типы данных</h3>
+            </article>
+        </section>
+
+        <section class="video-row">
+            <!-- 5 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/SUDNfS_0X-Q" title="Python Tutorial #5"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson5">Урок 5: Условные операторы</h3>
+            </article>
+
+            <!-- 6 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/vMD6-jzgDvI" title="Python Tutorial #6"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson6">Урок 6: Циклы и операторы в них (for, while)</h3>
+            </article>
+        </section>
+
+        <section class="video-row">
+            <!-- 7 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/-X2ubBdP2Ak" title="Python Tutorial #7"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson7">Урок 7: Списки (list). Функции и их методы</h3>
+            </article>
+
+            <!-- 8 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/pqaBWcsBGyA" title="Python Tutorial #8"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson8">Урок 8: Функции строк. Индексы и срезы</h3>
+            </article>
+
+        </section>
+
+        <section class="video-row">
+            <!-- 9 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/cQfu-hYo2o4" title="Python Tutorial #9"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson9">Урок 9: Кортежи (tuple)</h3>
+            </article>
+
+            <!-- 10 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/W2oO1Y-QDzo" title="Python Tutorial #10"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson10">Урок 10: Словари (dict) и работа с ними</h3>
+            </article>
+        </section>
+
+        <section class="video-row">
+            <!-- 11 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/6eNtZ8wY7qI" title="Python Tutorial #11"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson11">Урок 11: Множества (set и frozenset)</h3>
+            </article>
+
+            <!-- 12 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/6K5v4--G__U" title="Python Tutorial #12"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson12">Урок 12: Функции (def, lambda)</h3>
+            </article>
+
+        </section>
+
+        <section class="video-row">
+            <!-- 13 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/t-xQAhLNYSs" title="Python Tutorial #13"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson13">Урок 13: Работа с файлами за счет Питон</h3>
+            </article>
+
+            <!-- 14 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/3nveLco08Y0" title="Python Tutorial #14"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson14">Урок 14: Обработчик исключений. Конструкция «try - except»</h3>
+            </article>
+        </section>
+
+        <section class="video-row">
+            <!-- 15 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/uGsSTZjUoIc" title="Python Tutorial #15"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson15">Урок 15: Менеджер «With ... as» для работы с файлами</h3>
+            </article>
+
+            <!-- 16 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/dNg3l-wpRdY" title="Python Tutorial #16"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson16">Урок 16: Модули в языке Питон. Создание и работа с модулями</h3>
+            </article>
+        </section>
+
+        <section class="video-row">
+            <!-- 17 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/gFRa6qVN980" title="Python Tutorial #17"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson17">Урок 17: Основы ООП. Создание класса и объекта</h3>
+            </article>
+
+            <!-- 18 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/Y6N-na2WOx8" title="Python Tutorial #18"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson18">Урок 18: Конструкторы, переопределение методов</h3>
+            </article>
+        </section>
+
+        <section class="video-row">
+            <!-- 19 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/4N4GSzLF7JM" title="Python Tutorial #19"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson19">Урок 19: Наследование, инкапсуляция, полиморфизм</h3>
+            </article>
+
+            <!-- 20 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/tuFuDKE7DF8" title="Python Tutorial #20"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson20">Урок 20: Декораторы функций</h3>
+            </article>
+
+        </section>
+        <section class="video-row">
+            <!-- 21 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/-viVz4cwDU4" title="Python Tutorial #21"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson21">Урок 21: Заключительная часть</h3>
+            </article>
+
+            <!-- 22 -->
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/6HFHCO2PtKM" title="Python Tutorial #22"
+                    allowfullscreen></iframe>
+                <h3 data-i18="video.lesson22">Урок 22: Профессия «Python разработчик» | Презентация онлайн курса</h3>
+            </article>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

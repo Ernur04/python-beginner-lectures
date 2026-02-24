@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="nav.practice">Практика</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/practice.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫс ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="page-title-placeholder">
+            <h2 data-i18="practice.title">Практические Задания</h2>
+            <p data-i18="practice.description">Скоро здесь будет доступен полный набор практических задач для отработки
+                навыков программирования.</p>
+        </div>
+
+        <section class="practice-section" id="practice-15">
+            <h2 data-i18="practice.15.title">ПРАКТИКАЛЫҚ ЖҰМЫС №15</h2>
+            <h2 data-i18="practice.15.topic">Тақырыбы: Жоба қорғау (Python қолданбасы)</h2>
+            <h3 data-i18="practice.15.goal.title">1. Практикалық жұмыстың мақсаты</h3>
+            <ul>
+                <li data-i18="practice.15.goal.list.1">Студенттің курс барысында алған білімдерін жүйелеу;</li>
+                <li data-i18="practice.15.goal.list.2">Python тілін қолдана отырып шағын қолданбалы жоба дайындау;</li>
+                <li data-i18="practice.15.goal.list.3">Модульдер, файлдар, функциялар, ООП, шарттар, циклдер, тізімдер,
+                    сөздіктер сияқты тақырыптарды біріктіріп пайдалану;</li>
+                <li data-i18="practice.15.goal.list.4">Бағдарламаны презентациялау және қорғау дағдыларын дамыту;</li>
+                <li data-i18="practice.15.goal.list.5">Командалық немесе жеке жұмыс ішінде жауапкершілік, логикалық
+                    ойлау, креативтілік қабілеттерін жетілдіру.</li>
+            </ul>
+            <h3 data-i18="practice.15.req.title">2. Жобаға қойылатын жалпы талаптар</h3>
+            <p data-i18="practice.15.req.desc">Студент жасаған Python жобасы келесі талаптарға сай болуы тиіс:</p>
+            <p data-i18="practice.15.req.tech.title"><strong>✔ Техникалық талаптар</strong></p>
+            <ul>
+                <li data-i18="practice.15.req.tech.list.1">Код Python 3.x нұсқасында жазылуы тиіс;</li>
+                <li data-i18="practice.15.req.tech.list.2">Кемінде 3–6 модуль немесе Python бөлімдері қолданылуы тиіс:
+                </li>
+                <ul>
+                    <li data-i18="practice.15.req.tech.sub.1">шартты операторлар</li>
+                    <li data-i18="practice.15.req.tech.sub.2">циклдер</li>
+                    <li data-i18="practice.15.req.tech.sub.3">функциялар</li>
+                    <li data-i18="practice.15.req.tech.sub.4">файлмен жұмыс</li>
+                    <li data-i18="practice.15.req.tech.sub.5">тізімдер, сөздіктер</li>
+                    <li data-i18="practice.15.req.tech.sub.6">ООП (міндетті емес, бірақ ұсынылады)</li>
+                </ul>
+                <li data-i18="practice.15.req.tech.list.3">Жоба толық жұмыс істейтін болуы тиіс (қателіксіз);</li>
+                <li data-i18="practice.15.req.tech.list.4">Пайдаланушы интерфейсі:</li>
+                <ul>
+                    <li data-i18="practice.15.req.tech.ui.1">CLI (консоль) форматында</li>
+                    <li data-i18="practice.15.req.tech.ui.2">немесе GUI (Tkinter) форматында</li>
+                </ul>
+                <li data-i18="practice.15.req.tech.list.5">Код құрылымы таза, түсініктемелер жазылған болуы керек.</li>
+            </ul>
+            <p data-i18="practice.15.req.doc.title"><strong>✔ Құжаттық талаптар</strong></p>
+            <p data-i18="practice.15.req.doc.desc">Студент қорғауға дайындайды:</p>
+            <ul>
+                <p data-i18="practice.15.req.doc.list.1">1. Жоба атауы мен мақсаты</p>
+                <p data-i18="practice.15.req.doc.list.2">2. Қолданылатын технологиялар мен модульдер</p>
+                <p data-i18="practice.15.req.doc.list.3">3. Бағдарламаның жұмыс схемасы (алгоритм)</p>
+                <p data-i18="practice.15.req.doc.list.4">4. Код үзінділері</p>
+                <p data-i18="practice.15.req.doc.list.5">5. Нәтижелер (скриншоттар)</p>
+                <p data-i18="practice.15.req.doc.list.6">6. Қорытынды</p>
+            </ul>
+            <h3 data-i18="practice.15.themes.title">3. Жоба тақырыптарының үлгі тізімі</h3>
+            <p data-i18="practice.15.themes.desc">Студент төмендегі ұсыныстар ішінен таңдай алады немесе өз идеясын
+                ұсына алады.</p>
+            <h4 data-i18="practice.15.theme1.title">1) Студенттік база (Student Manager)</h4>
+            <ul>
+                <li data-i18="practice.15.theme1.list.1">студент қосу / жою</li>
+                <li data-i18="practice.15.theme1.list.2">іздеу</li>
+                <li data-i18="practice.15.theme1.list.3">файлға сақтау</li>
+                <li data-i18="practice.15.theme1.list.4">статистика шығару</li>
+            </ul>
+            <h4 data-i18="practice.15.theme2.title">2) Жеке қаржы есептегіші (Budget Tracker)</h4>
+            <ul>
+                <li data-i18="practice.15.theme2.list.1">кіріс/шығыс енгізу</li>
+                <li data-i18="practice.15.theme2.list.2">айлық есеп</li>
+                <li data-i18="practice.15.theme2.list.3">график (қалаған жағдайда)</li>
+                <li data-i18="practice.15.theme2.list.4">файлға жазу</li>
+            </ul>
+            <h4 data-i18="practice.15.theme3.title">3) Мини-калькулятор (CLI немесе GUI)</h4>
+            <ul>
+                <li data-i18="practice.15.theme3.list.1">төрт амал</li>
+                <li data-i18="practice.15.theme3.list.2">тригонометрия (math модулі)</li>
+            </ul>
+            <h4 data-i18="practice.15.theme4.title">4) Тест/викторина жүйесі</h4>
+            <ul>
+                <li data-i18="practice.15.theme4.list.1">сұрақтар тізімі</li>
+                <li data-i18="practice.15.theme4.list.2">балл есептеу</li>
+                <li data-i18="practice.15.theme4.list.3">файлға нәтиже жазу</li>
+            </ul>
+            <h4 data-i18="practice.15.theme5.title">5) Кітапхана жүйесі (Library App)</h4>
+            <ul>
+                <li data-i18="practice.15.theme5.list.1">кітап қосу</li>
+                <li data-i18="practice.15.theme5.list.2">кітапты беру/қайтару</li>
+                <li data-i18="practice.15.theme5.list.3">ID арқылы іздеу</li>
+            </ul>
+            <h4 data-i18="practice.15.theme6.title">6) Дүкен тауарларын басқару (Shop Inventory)</h4>
+            <ul>
+                <li data-i18="practice.15.theme6.list.1">тауар қосу</li>
+                <li data-i18="practice.15.theme6.list.2">бағасын өзгерту</li>
+                <li data-i18="practice.15.theme6.list.3">ең қымбат/ең арзан тауарды табу</li>
+            </ul>
+            <h4 data-i18="practice.15.theme7.title">7) GUI қолданбасы (Tkinter)</h4>
+            <ul>
+                <li data-i18="practice.15.theme7.list.1">калькулятор</li>
+                <li data-i18="practice.15.theme7.list.2">күнтізбе</li>
+                <li data-i18="practice.15.theme7.list.3">тіркелу терезесі (login)</li>
+                <li data-i18="practice.15.theme7.list.4">мини-game: "Click counter", "Guess the number"</li>
+            </ul>
+            <h3 data-i18="practice.15.steps.title">4. Студентке арналған орындалу қадамдары</h3>
+            <h4 data-i18="practice.15.step1.title">1-қадам. Жоба идеясын таңдау және сипаттау</h4>
+            <ul>
+                <li data-i18="practice.15.step1.list.1">Жоба атауы</li>
+                <li data-i18="practice.15.step1.list.2">Мақсаты</li>
+                <li data-i18="practice.15.step1.list.3">Не үшін қажет?</li>
+                <li data-i18="practice.15.step1.list.4">Қандай функциялар орындалады?</li>
+            </ul>
+            <h4 data-i18="practice.15.step2.title">2-қадам. Жоба құрылымын дайындау</h4>
+            <ul>
+                <li data-i18="practice.15.step2.list.1">модульдер</li>
+                <li data-i18="practice.15.step2.list.2">папкалар</li>
+                <li data-i18="practice.15.step2.list.3">main.py</li>
+            </ul>
+            <h4 data-i18="practice.15.step3.title">3-қадам. Алгоритм жазу</h4>
+            <p data-i18="practice.15.step3.desc">Псевдокод немесе блок-схема түрінде.</p>
+            <h4 data-i18="practice.15.step4.title">4-қадам. Негізгі кодты жазу</h4>
+            <p data-i18="practice.15.step4.desc">Кемінде мына бөліктер болуы тиіс:</p>
+            <ul>
+                <p>✔ функциялар</p>
+                <p>✔ циклдер</p>
+                <p>✔ if/elif/else</p>
+                <p>✔ тізім, сөздік немесе кортеж</p>
+                <p>✔ файлмен жұмыс</p>
+                <p>✔ қажет болса ООП</p>
+                <p>✔ GUI қолданса — Tkinter класс құрылымы</p>
+            </ul>
+            <h4 data-i18="practice.15.step5.title">5-қадам. Жобаны тестілеу</h4>
+            <ul>
+                <li data-i18="practice.15.step5.list.1">Жөндеу</li>
+                <li data-i18="practice.15.step5.list.2">Қатені өңдеу (try/except)</li>
+            </ul>
+            <h4 data-i18="practice.15.step6.title">6-қадам. Қорғауға презентация дайындау</h4>
+            <p data-i18="practice.15.step6.desc">Презентацияда:</p>
+            <ul>
+                <li data-i18="practice.15.step6.list.1">Жобаның мақсаты</li>
+                <li data-i18="practice.15.step6.list.2">Интерфейс (скриншот)</li>
+                <li data-i18="practice.15.step6.list.3">Кодтың маңызды бөліктері</li>
+                <li data-i18="practice.15.step6.list.4">Нәтиже</li>
+                <li data-i18="practice.15.step6.list.5">Қорытынды</li>
+            </ul>
+            <h3 data-i18="practice.15.criteria.title">5. Қорғау барысында бағалау критерийлері</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18="practice.15.criteria.head.1">Критерий</th>
+                        <th data-i18="practice.15.criteria.head.2">Ұпай</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-i18="practice.15.criteria.row1">Жоба идеясының өзектілігі</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.15.criteria.row2">Python функционалын толық қолдану</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.15.criteria.row3">Код сапасы (түсініктеме, құрылым, тиімділік)</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.15.criteria.row4">Файлмен/модульдермен/функциялармен жұмыс</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.15.criteria.row5">GUI қолданылса +5 қосымша ұпай</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.15.criteria.row6">Жоба презентациясының сапасы</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.15.criteria.row7">Жобаны ауызша қорғауы</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.15.criteria.total">Жалпы:</td>
+                        <td data-i18="practice.15.criteria.points">45–50 ұпай</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 data-i18="practice.15.questions.title">6. Қорғауға арналған студент сұрақтары (эксперт сұрауы мүмкін)
+            </h3>
+            <ul>
+                <p data-i18="practice.15.questions.1">1. Жобаңызды не үшін таңдадыңыз?</p>
+                <p data-i18="practice.15.questions.2">2. Бағдарламаның негізгі функциялары қандай?</p>
+                <p data-i18="practice.15.questions.3">3. Қандай модульдер немесе кітапханалар қолдандыңыз?</p>
+                <p data-i18="practice.15.questions.4">4. Файлмен жұмыс қалай ұйымдастырылған?</p>
+                <p data-i18="practice.15.questions.5">5. Қандай деректер құрылымын таңдадыңыз және неге?</p>
+                <p data-i18="practice.15.questions.6">6. Егер GUI болса, Tkinter-де қандай виджеттер қолданылды?</p>
+                <p data-i18="practice.15.questions.7">7. Қате өңдеу қалай жасалған?</p>
+                <p data-i18="practice.15.questions.8">8. Жобаны әрі қарай жетілдіру мүмкін бе?</p>
+            </ul>
+            <h3 data-i18="practice.15.output.title">7. Студент шығаратын нәтижелер (output)</h3>
+            <ul>
+                <li data-i18="practice.15.output.list.1">Жұмыс істейтін бағдарлама</li>
+                <li data-i18="practice.15.output.list.2">Код файлы (.py)</li>
+                <li data-i18="practice.15.output.list.3">Презентация (PowerPoint, Google Slides)</li>
+                <li data-i18="practice.15.output.list.4">Жоба туралы қысқа есеп (1–2 бет)</li>
+                <li data-i18="practice.15.output.list.5">Қосымша файлдар (мәліметтер, txt, json т.б.)</li>
+            </ul>
+            <h3 data-i18="practice.15.task.title">8. Практикалық тапсырма түрінде студент орындайтын нақты міндет</h3>
+            <p data-i18="practice.15.task.desc">Тапсырма: Python тілінде шағын қолданба жасап, оны презентация арқылы
+                қорғаңыз.
+                Бағдарлама кемінде 5 функционалдық мүмкіндікті орындауы тиіс.</p>
+            <p data-i18="practice.15.task.example">Мысалы (студенттік база):</p>
+            <ul>
+                <p data-i18="practice.15.task.list.1">1. студент қосу</p>
+                <p data-i18="practice.15.task.list.2">2. студентті жою</p>
+                <p data-i18="practice.15.task.list.3">3. іздеу</p>
+                <p data-i18="practice.15.task.list.4">4. барлық студенттер тізімін шығару</p>
+                <p data-i18="practice.15.task.list.5">5. файлға сақтау / файлдан оқу</p>
+            </ul>
+            <h3 data-i18="practice.15.honesty.title">9. Академиялық адалдық</h3>
+            <ul>
+                <li data-i18="practice.15.honesty.list.1">Жоба — студенттің өз еңбегі болуы тиіс;</li>
+                <li data-i18="practice.15.honesty.list.2">Интернеттен алынған кодтың бөліктері болған жағдайда
+                    түсіндіріліп берілуі керек;</li>
+            </ul>
+
+            <div class="lecture-navigation">
+                <a href="practice_14.html" class="nav-button prev-button">←</a>
+
+                <a href="practice.html" class="page-number" data-i18="page-1">1</a>
+                <span class="dots">...</span>
+                <a href="practice_8.html" class="page-number" data-i18="page-8">8</a>
+                <a href="practice_9.html" class="page-number" data-i18="page-9">9</a>
+                <a href="practice_10.html" class="page-number" data-i18="page-10">10</a>
+                <a href="practice_11.html" class="page-number" data-i18="page-11">11</a>
+                <a href="practice_12.html" class="page-number" data-i18="page-11">12</a>
+                <a href="practice_13.html" class="page-number" data-i18="page-11">13</a>
+                <a href="practice_14.html" class="page-number" data-i18="page-11">14</a>
+                <a href="practice_15.html" class="page-number current-page" data-i18="page-11">15</a>
+
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

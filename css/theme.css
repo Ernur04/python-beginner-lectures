@@ -1,0 +1,473 @@
+/* Dark theme variant when html has data-theme="dark" */
+html[data-theme='dark'] #language {
+    background: linear-gradient(90deg, rgba(20,34,44,0.9), rgba(26,58,82,0.85));
+    border: 2px solid rgba(255,215,0,0.15);
+    color: #fff;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23ffd700' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+}
+
+/* Dark theme option styles */
+html[data-theme='dark'] #language option {
+    background-color: #21343d;
+    color: #fff;
+}
+
+html[data-theme='dark'] #language option:checked {
+    background-color: rgba(255,215,0,0.15);
+    color: #ffd700;
+}
+
+html[data-theme='dark'] #language option:hover {
+    background-color: rgba(255,215,0,0.06);
+}
+
+/* Dark theme for lang buttons */
+html[data-theme='dark'] .lang-button {
+    background: rgba(255,255,255,0.04);
+    color: #dbeefc;
+    border-color: rgba(255,215,0,0.06);
+}
+
+html[data-theme='dark'] .lang-button.active,
+html[data-theme='dark'] .lang-button[aria-pressed='true'] {
+    background: #ffd700;
+    color: #071521;
+    border-color: #ffd700;
+}
+
+/* Dark theme additional overrides for multiple elements */
+html[data-theme='dark'] {
+    background-color: #07121a;
+    color: #dceefc;
+}
+
+html[data-theme='dark'] header {
+    background: linear-gradient(135deg, #0f3a5a 0%, #102532 100%);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+html[data-theme='dark'] .logo h1 {
+    color: #fff;
+    text-shadow: none;
+}
+
+html[data-theme='dark'] .navigation a {
+    color: rgba(255,255,255,0.9);
+}
+
+html[data-theme='dark'] .navigation a:hover {
+    background: rgba(255,255,255,0.04);
+}
+
+html[data-theme='dark'] .section {
+    background: #071521;
+    color: #dbeefc;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+    border-left-color: #ffd700;
+}
+
+html[data-theme='dark'] .section h2 {
+    color: #a6daf7;
+    border-bottom-color: rgba(255,215,0,0.12);
+}
+
+html[data-theme='dark'] .lessons-list li {
+    background: rgba(255,255,255,0.02);
+    color: #e6f4ff;
+    border-left-color: #ffd700;
+}
+
+html[data-theme='dark'] .footer {
+    background: linear-gradient(135deg, #071e2b 0%, #0b2a36 100%);
+    color: #dbeefc;
+}
+
+html[data-theme='dark'] .footer-links a,
+html[data-theme='dark'] .footer-contact a,
+html[data-theme='dark'] .footer-info p {
+    color: #cfe9fb;
+}
+
+html[data-theme='dark'] .footer-links a:hover,
+html[data-theme='dark'] .footer-contact a:hover {
+    color: #ffd700;
+}
+
+html[data-theme='dark'] .footer-social a {
+    background: rgba(255,215,0,0.04);
+    border-color: rgba(255,215,0,0.12);
+}
+
+html[data-theme='dark'] .footer-social a:hover {
+    background: #ffd700;
+}
+
+html[data-theme='dark'] #theme-toggle {
+    background: rgba(255,255,255,0.04);
+    color: #ffd700;
+}
+
+html[data-theme='dark'] #language {
+    /* already has dark variant, ensure readability */
+    color: #fff;
+}
+
+/* ensure contrast for links in dark mode */
+html[data-theme='dark'] a {
+    color: #bfe6ff;
+}
+
+html[data-theme='dark'] .about-section {
+    background: #071521;
+    color: #dbeefc;
+    box-shadow: 0 2px 8px rgba(54,105,148,0.2);
+}
+
+html[data-theme='dark'] .about-content {
+    color: #dbeefc;
+}
+
+html[data-theme='dark'] .about-content > p {
+    color: #a6daf7;
+}
+
+html[data-theme='dark'] .about-content h3 {
+    color: #a6daf7;
+}
+
+html[data-theme='dark'] .about-list li {
+    color: #a6daf7;
+    border-bottom-color: rgba(255,215,0,0.05);
+}
+
+html[data-theme='dark'] .about-list li strong {
+    color: #a6daf7;
+}
+
+html[data-theme='dark'] .carousel-btn {
+    background: #ffd700;
+}
+
+html[data-theme='dark'] .video-card {
+    background: #071521;
+    color: #dbeefc;
+}
+
+html[data-theme='dark'] .video-card h3 {
+    color: #a6daf7;
+}
+
+/* === Тёмная тема === */
+body.dark-mode {
+    background: #1e1e1e;
+    color: #ddd;
+}
+
+body.dark-mode .page-title-placeholder {
+    background: linear-gradient(135deg, #222, #444);
+    color: #ffd700;
+    border-bottom-color: #366994;
+}
+
+body.dark-mode .sidebar {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: #ddd;
+}
+body.dark-mode .sidebar h3 {
+    color: #ffd700;
+}
+body.dark-mode .sidebar-nav a {
+    color: #ddd;
+}
+body.dark-mode .sidebar-nav a:hover {
+    background: #ffd700;
+    color: #222;
+}
+
+body.dark-mode .cheatsheet-card {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: #ddd;
+}
+body.dark-mode .cheatsheet-card h3 {
+    color: #ffd700;
+}
+body.dark-mode .cheatsheet-card p {
+    color: #ccc;
+}
+
+body.dark-mode .cheat-code {
+    background: #333;
+    border-left-color: #366994;
+    color: #eee;
+}
+
+/* Dark Theme for Docs */
+html[data-theme='dark'] .docs-wrapper {
+    border-color: #1a3a52;
+}
+
+html[data-theme='dark'] .docs-sidebar {
+    background-color: #071521;
+    border-right-color: #1a3a52;
+}
+
+html[data-theme='dark'] .docs-sidebar h3 {
+    color: #a6daf7;
+}
+
+html[data-theme='dark'] .docs-nav ul li a {
+    color: #dbeefc;
+}
+
+html[data-theme='dark'] .docs-nav ul li a:hover {
+    background-color: #1a3a52;
+    color: #ffd700;
+}
+
+html[data-theme='dark'] .docs-nav ul ul li a {
+    color: #bbb;
+}
+
+html[data-theme='dark'] .docs-content {
+    background-color: #0d283c;
+}
+
+html[data-theme='dark'] .docs-content h2 {
+    color: #a6daf7;
+    border-bottom-color: #ffd700;
+}
+
+html[data-theme='dark'] .docs-content h3 {
+    color: #ffd700;
+}
+
+html[data-theme='dark'] .docs-content h4 {
+    color: #a6daf7;
+}
+
+html[data-theme='dark'] .docs-content p {
+    color: #dbeefc;
+}
+
+html[data-theme='dark'] .code-example {
+    background-color: #1a3a52;
+    border-color: #366994;
+}
+
+html[data-theme='dark'] .code-example code {
+    color: #a6daf7;
+}
+
+/* Dark mode styles for FAQ */
+html[data-theme='dark'] .faq-wrapper {
+    background-color: #071521;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================= */
+/* Dark Mode Adjustments for FAQ */
+/* ========================= */
+
+html[data-theme='dark'] .faq-wrapper {
+    background-color: var(--color-bg-dark-secondary);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme='dark'] .faq-category {
+    border-bottom: 3px solid var(--color-border-dark);
+}
+
+html[data-theme='dark'] .faq-item {
+    border-color: var(--color-border-dark);
+}
+
+html[data-theme='dark'] .faq-question {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+}
+
+html[data-theme='dark'] .faq-question:hover {
+    background-color: #172a3a; /* Чуть темнее */
+}
+
+html[data-theme='dark'] .faq-answer {
+    background-color: var(--color-bg-dark-secondary);
+    border-top-color: var(--color-border-dark);
+}
+
+html[data-theme='dark'] .faq-answer p {
+    color: var(--color-text-light);
+}
+
+/* Dark Theme for Timeline */
+html[data-theme='dark'] .timeline-container::after {
+    background-color: #ffd700;
+}
+
+html[data-theme='dark'] .timeline-item::after {
+    background-color: #071521;
+    border-color: #ffd700;
+}
+
+html[data-theme='dark'] .timeline-content {
+    background-color: #1a3a52;
+    color: #dbeefc;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+}
+
+html[data-theme='dark'] .timeline-content h3 {
+    color: #a6daf7;
+}
+
+html[data-theme='dark'] .timeline-content p {
+    color: #dbeefc;
+}
+
+html[data-theme='dark'] .timeline-content p:last-child {
+    color: #ffd700;
+}
+
+html[data-theme='dark'] .timeline-item:nth-child(odd) .timeline-content::before {
+    border-color: transparent transparent transparent #1a3a52;
+}
+
+html[data-theme='dark'] .timeline-item:nth-child(even) .timeline-content::before {
+    border-color: transparent #1a3a52 transparent transparent;
+}
+
+html[data-theme='dark'] .history-conclusion {
+    background: #0b2333;
+    border-color: #ffd700;
+}
+
+html[data-theme='dark'] .history-conclusion h3 {
+    color: #ffd700;
+}
+
+html[data-theme='dark'] .timeline-item:nth-child(odd) .timeline-content::before {
+    border-color: transparent #1a3a52 transparent transparent;
+}
+
+html[data-theme='dark'] .timeline-item:nth-child(even) .timeline-content::before {
+    border-color: transparent #1a3a52 transparent transparent;
+}
+
+
+html[data-theme='dark'] .lecture-page-header {
+    background-color: #1a2734; /* Қараңғы фонды тереңдету */
+}
+
+html[data-theme='dark'] .lecture-page-header h1 {
+    color: #9ac2e9; /* Қараңғы режимде ашық көгілдір */
+}
+html[data-theme='dark'] .lecture-page-header p {
+    color: #c4d4e6;
+}
+
+html[data-theme='dark'] .lecture-section h2 {
+    color: #ffda80; /* Қараңғы режимде ашық сары */
+    border-bottom: 3px solid #2c5f88;
+}
+
+html[data-theme='dark'] .lecture-section h3 {
+    color: #a4cbed;
+}
+
+html[data-theme='dark'] .lecture-content p {
+    color: #d1dbe5;
+}
+
+html[data-theme='dark'] .lecture-content pre {
+    background-color: #1e3046;
+    border: 1px solid #3d5673;
+}
+
+html[data-theme='dark'] .lecture-content code {
+    color: #88cfff;
+}
+
+html[data-theme='dark'] .application-list p {
+    background: #152d47;
+    border-left: 5px solid #ffda80;
+}
+
+html[data-theme='dark'] .lecture-navigation {
+    border-top: 1px solid #333;
+}
+
+html[data-theme='dark'] .nav-button, html[data-theme='dark'] .page-number {
+    background-color: #293d50;
+    border: 1px solid #4c637a;
+    color: #e0eaf3;
+    box-shadow: none;
+}
+
+html[data-theme='dark'] .nav-button:hover:not([disabled]), 
+html[data-theme='dark'] .page-number:hover:not(.current-page) {
+    background-color: #3d5673;
+    border-color: #64b5f6;
+    color: #90caf9;
+    box-shadow: none;
+}
+
+html[data-theme='dark'] .current-page {
+    background-color: #64b5f6;
+    border-color: #64b5f6;
+    color: #1a2734; /* Мәтінді қараңғы фонға ауыстыру */
+    box-shadow: 0 4px 8px rgba(100, 181, 246, 0.2);
+}
+
+/* ===================== */
+/* Тёмная тема           */
+/* ===================== */
+html[data-theme='dark'] .content-wrapper {
+    background: #071521;
+    color: #dbeefc;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+}
+
+html[data-theme='dark'] .page-title-placeholder h2 {
+    color: #a6daf7;
+    border-bottom-color: #ffd700;
+}
+
+html[data-theme='dark'] .page-title-placeholder p {
+    color: #cfe9fb;
+}
+
+html[data-theme='dark'] .video-card {
+    background: #0b2333;
+    border-left: 5px solid #ffd700;
+    box-shadow: 0 4px 16px rgba(255,215,0,0.1);
+}
+
+html[data-theme='dark'] .video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(255,215,0,0.2);
+}
+
+html[data-theme='dark'] .video-card h3 {
+    color: #a6daf7;
+    background: #102532;
+    border-top: 1px solid rgba(255,215,0,0.12);
+
+    /* Стиль для источника видео */
+    .video-source {
+        font-size: 0.9rem;
+        color: #777; /* Более светлый цвет, чтобы выделить его как метаданные */
+        margin-top: 5px; /* Небольшой отступ от основного описания */
+    }
+
+    /* Стиль для самой ссылки */
+    .video-source a {
+        color: #3f51b5; /* Например, синий цвет для ссылки */
+        text-decoration: none;
+    }
+
+    .video-source a:hover {
+        text-decoration: underline;
+    }
+}
+

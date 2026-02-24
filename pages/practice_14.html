@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="nav.practice">Практика</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/practice.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫс ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="page-title-placeholder">
+            <h2 data-i18="practice.title">Практические Задания</h2>
+            <p data-i18="practice.description">Скоро здесь будет доступен полный набор практических задач для отработки
+                навыков программирования.</p>
+        </div>
+
+        <section class="practice-section" id="practice-14">
+            <h2 data-i18="practice.14.title">ПРАКТИКАЛЫҚ ЖҰМЫС №14</h2>
+            <h2 data-i18="practice.14.topic">Тақырыбы: GUI интерфейс жасау (Tkinter графикалық интерфейсі)</h2>
+            <h3 data-i18="practice.14.goal.title">1. Практикалық жұмыстың мақсаты</h3>
+            <ul>
+                <li data-i18="practice.14.goal.list.1">Python тілінде <strong>графикалық интерфейс (GUI)</strong> ұғымын
+                    түсіну;</li>
+                <li data-i18="practice.14.goal.list.2">Tkinter кітапханасы арқылы қарапайым терезе (window) құру;</li>
+                <li data-i18="practice.14.goal.list.3">Негізгі виджеттермен жұмыс: Label, Button, Entry, Text;</li>
+                <li data-i18="practice.14.goal.list.4">Орналастыру әдістерін (pack, grid) қолдану;</li>
+                <li data-i18="practice.14.goal.list.5">Пайдаланушы әрекетіне жауап беретін функциялар (оқиғалар, event
+                    handler) жазу;</li>
+                <li data-i18="practice.14.goal.list.6">Қарапайым <strong>форма, есептегіш, мини-калькулятор</strong>
+                    сияқты қолданбалы GUI бағдарламалар жасауға дағдылану.</li>
+            </ul>
+            <h3 data-i18="practice.14.resources.title">2. Қажетті бағдарламалар</h3>
+            <ul>
+                <li data-i18="practice.14.resources.list.1">Python 3.10+</li>
+                <li data-i18="practice.14.resources.list.2">Tkinter (Python-мен бірге келеді)</li>
+                <li data-i18="practice.14.resources.list.3">PyCharm / VS Code / IDLE</li>
+            </ul>
+            <h3 data-i18="practice.14.theory.title">3. Теориялық бөлім (қысқаша)</h3>
+            <h4 data-i18="practice.14.theory.subtitle1">3.1 GUI деген не?</h4>
+            <p data-i18="practice.14.theory.gui.desc">GUI (Graphical User Interface) — пайдаланушы бағдарламамен
+                <strong>терезе, батырма, мәтіндік өріс, меню</strong> сияқты графикалық элементтер арқылы жұмыс істейтін
+                интерфейс.
+            </p>
+            <p data-i18="practice.14.theory.tkinter.desc">Python-да ең жиі қолданылатын GUI кітапханалардың бірі —
+                <strong>Tkinter</strong>.
+            </p>
+            <h4 data-i18="practice.14.theory.subtitle2">3.2 Tkinter-ді импорттау және терезе құру</h4>
+            <pre><code>import tkinter as tk   # қысқаша атау
+
+window = tk.Tk()       # Негізгі терезе
+window.title("Менің алғашқы GUI-ім")
+window.geometry("400x300")   # Ені x Биіктігі
+
+window.mainloop()      # Терезені ашық ұстау циклі
+</code></pre>
+            <p data-i18="practice.14.theory.mainloop.desc"><strong>Маңызды:</strong> mainloop() – бағдарлама “терезені
+                күту режимінде” ұстап тұратын шексіз цикл.</p>
+            <h4 data-i18="practice.14.theory.subtitle3">3.3 Негізгі виджеттер</h4>
+            <p data-i18="practice.14.theory.widget.label">1) Label — жазу (мәтін)</p>
+            <pre><code>label = tk.Label(window, text="Сәлем, студент!", font=("Arial", 14))
+label.pack()
+</code></pre>
+            <p data-i18="practice.14.theory.widget.button">2) Button — батырма</p>
+            <pre><code>def say_hello():
+    print("Батырма басылды!")
+
+btn = tk.Button(window, text="Бас", command=say_hello)
+btn.pack()
+</code></pre>
+            <p data-i18="practice.14.theory.command.desc">command – батырма басылғанда шақырылатын функция.</p>
+            <p data-i18="practice.14.theory.widget.entry">3) Entry — бір жолды енгізу өрісі</p>
+            <pre><code>entry = tk.Entry(window, width=30)
+entry.pack()
+</code></pre>
+            <p data-i18="practice.14.theory.entry.read">Мәнін оқу:</p>
+            <pre><code>text = entry.get()</code></pre>
+            <p data-i18="practice.14.theory.widget.text">4) Text — көп жолды мәтін</p>
+            <pre><code>txt = tk.Text(window, height=5, width=40)
+txt.pack()
+</code></pre>
+            <h4 data-i18="practice.14.theory.subtitle4">3.4 Виджеттерді орналастыру</h4>
+            <ul>
+                <p data-i18="practice.14.theory.layout.pack">1. <strong>pack()</strong> – қарапайым,
+                    үстіне/астына/оң/сол жағына</p>
+                <p data-i18="practice.14.theory.layout.grid">2. <strong>grid(row, column)</strong> – кесте түрінде
+                    орналастыру</p>
+                <p data-i18="practice.14.theory.layout.place">3. <strong>place()</strong> – координата бойынша (бұл
+                    жұмыста негізінен pack және grid жеткілікті)</p>
+            </ul>
+            <p data-i18="practice.14.theory.example">Мысалы:</p>
+            <pre><code>label.grid(row=0, column=0)
+entry.grid(row=0, column=1)
+button.grid(row=1, column=0, columnspan=2)
+</code></pre>
+            <h3 data-i18="practice.14.steps.title">4. Практикалық жұмыс қадамдары</h3>
+            <h4 data-i18="practice.14.steps.step1.title">1-қадам. Жаңа файл ашу</h4>
+            <p data-i18="practice.14.steps.step1.desc">Файл атауы: <strong>gui_basic.py</strong></p>
+            <pre><code>import tkinter as tk
+
+window = tk.Tk()
+window.title("GUI практика №14")
+window.geometry("400x300")
+
+window.mainloop()
+</code></pre>
+            <h4 data-i18="practice.14.steps.step2.title">2-қадам. Label және Button қосу</h4>
+            <pre><code>import tkinter as tk
+
+def hello():
+    label.config(text="Сәлем, Python GUI!")
+
+window = tk.Tk()
+window.title("GUI демо")
+window.geometry("400x200")
+
+label = tk.Label(window, text="Батырманы басыңыз!", font=("Arial", 14))
+label.pack(pady=10)
+
+button = tk.Button(window, text="Сәлем де", command=hello)
+button.pack(pady=10)
+
+window.mainloop()
+</code></pre>
+            <h4 data-i18="practice.14.steps.step3.title">3-қадам. Entry + Button + Label</h4>
+            <p data-i18="practice.14.steps.step3.desc">Пайдаланушы аты-жөнін енгізіп, батырма басқанда Label-де шығару.
+            </p>
+            <pre><code>import tkinter as tk
+
+def show_name():
+    name = entry.get()
+    label_result.config(text=f"Сәлем, {name}!")
+
+window = tk.Tk()
+window.title("Аты-жөн енгізу")
+window.geometry("400x200")
+
+entry = tk.Entry(window, width=30)
+entry.pack(pady=5)
+
+btn = tk.Button(window, text="Көрсету", command=show_name)
+btn.pack(pady=5)
+
+label_result = tk.Label(window, text="")
+label_result.pack(pady=5)
+
+window.mainloop()
+</code></pre>
+            <h3 data-i18="practice.14.tasks.title">5. Практикалық тапсырмалар</h3>
+            <p data-i18="practice.14.tasks.subtitle">Тапсырмаларды күрделендіре отырып орындауға болады.</p>
+            <h4 data-i18="practice.14.tasks.task1.title">Тапсырма 1. Қарапайым сәлемдесу терезесі</h4>
+            <p data-i18="practice.14.tasks.task1.desc">GUI терезе жасаңыз:</p>
+            <ul>
+                <li>
+                    <span data-i18="practice.14.tasks.task1.item1">Жоғарында Label: "Python GUI-ге қош келдіңіз!"</span>
+                </li>
+                <li>
+                    <span data-i18="practice.14.tasks.task1.item2">Астында "Жабу" деген батырма, оны басқанда терезе
+                        жабылсын (window.destroy()).</span>
+                </li>
+            </ul>
+            <h4 data-i18="practice.14.tasks.task2.title">Тапсырма 2. Енгізу/шығару формасы</h4>
+            <p data-i18="practice.14.tasks.task2.desc">Терезеде:</p>
+            <ul>
+                <li data-i18="practice.14.tasks.task2.item1">"Атыңыз:" деген Label</li>
+                <li data-i18="practice.14.tasks.task2.item2">Жанында Entry</li>
+                <li data-i18="practice.14.tasks.task2.item3">"Қарсы алу" батырмасы</li>
+                <li data-i18="practice.14.tasks.task2.item4">Батырма басылғанда: төменде "Сәлем, <аты>!" деп Label-ге
+                        жазылады.</li>
+            </ul>
+            <h4 data-i18="practice.14.tasks.task3.title">Тапсырма 3. Қосынды есептейтін мини-калькулятор</h4>
+            <p data-i18="practice.14.tasks.task3.desc">Терезеде:</p>
+            <ul>
+                <li data-i18="practice.14.tasks.task3.item1">Сан 1: Label + Entry</li>
+                <li data-i18="practice.14.tasks.task3.item2">Сан 2: Label + Entry</li>
+                <li data-i18="practice.14.tasks.task3.item3">"Қосу" батырмасы</li>
+                <li data-i18="practice.14.tasks.task3.item4">Нәтиже Label-де "Нәтиже: ..." деп көрсетілсін.</li>
+            </ul>
+            <p data-i18="practice.14.tasks.hint">Кеңес:</p>
+            <pre><code>a = int(entry1.get())
+b = int(entry2.get())
+</code></pre>
+            <h4 data-i18="practice.14.tasks.task4.title">Тапсырма 4. Grid орналасуын қолдану</h4>
+            <p data-i18="practice.14.tasks.task4.desc">grid() арқылы кішкентай форма жасаңыз:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>row</th>
+                        <th>column 0</th>
+                        <th>column 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td data-i18="practice.14.tasks.task4.item1">"Логин:"</td>
+                        <td>Entry</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td data-i18="practice.14.tasks.task4.item2">"Пароль:"</td>
+                        <td>Entry</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td data-i18="practice.14.tasks.task4.item3">Button "Кіру"</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p data-i18="practice.14.tasks.task4.footer">Батырманы басқанда консольге "Login clicked" деп жазылсын.</p>
+            <h4 data-i18="practice.14.tasks.task5.title">Тапсырма 5. Text виджетін қолдану</h4>
+            <p data-i18="practice.14.tasks.task5.desc">Терезеде:</p>
+            <ul>
+                <li data-i18="practice.14.tasks.task5.item1">Үлкен Text алаңы</li>
+                <li data-i18="practice.14.tasks.task5.item2">"Тазалау" батырмасы</li>
+            </ul>
+            <p data-i18="practice.14.tasks.task5.hint">Батырма басылғанда Text ішіндегі барлық мәтінді өшіріңіз:</p>
+            <pre><code>txt.delete("1.0", tk.END)</code></pre>
+            <h4 data-i18="practice.14.tasks.task6.title">Тапсырма 6. Шартпен жұмыс жасайтын GUI</h4>
+            <p data-i18="practice.14.tasks.task6.desc1">Entry-ге студенттің балын енгізу (0–100).</p>
+            <p data-i18="practice.14.tasks.task6.desc2">"Бағаны шығару" батырмасын басқанда Label-де:</p>
+            <ul>
+                <li>90–100 → "A"</li>
+                <li>75–89 → "B"</li>
+                <li>60–74 → "C"</li>
+                <li data-i18="practice.14.tasks.task6.fail">
+                    < 60 → "Өткен жоқ" </li>
+            </ul>
+            <h4 data-i18="practice.14.tasks.task7.title">Тапсырма 7. Түсті ауыстыратын батырма</h4>
+            <p data-i18="practice.14.tasks.task7.desc">Терезеде Label тұрады. 3 батырма: "Қызыл", "Жасыл", "Көк". Әр
+                батырманы басқанда Label фон түсі өзгереді:</p>
+            <pre><code>label.config(bg="red")</code></pre>
+            <h4 data-i18="practice.14.tasks.task8.title">Тапсырма 8. Қарапайым “санағыш” (counter)</h4>
+            <ul>
+                <li data-i18="practice.14.tasks.task8.item1">Label: "Санау: 0"</li>
+                <li data-i18="practice.14.tasks.task8.item2">+1 батырмасы → санды 1-ге арттырады</li>
+                <li data-i18="practice.14.tasks.task8.item3">-1 батырмасы → санды 1-ге кемітеді</li>
+                <li data-i18="practice.14.tasks.task8.item4">label үздіксіз жаңарып отырады.</li>
+            </ul>
+            <h4 data-i18="practice.14.tasks.task9.title">Тапсырма 9. “To-Do List” мини-қосымша (қарапайым нұсқа)</h4>
+            <ul>
+                <li>
+                    <span data-i18="practice.14.tasks.task9.item1">Entry — тапсырма енгізу</span>
+                </li>
+                <li data-i18="practice.14.tasks.task9.item2">"Қосу" батырмасы</li>
+                <li data-i18="practice.14.tasks.task9.item3">Төменде Listbox немесе Text ішінде тапсырмалар тізімі
+                    көрсетілсін.</li>
+            </ul>
+            <p data-i18="practice.14.tasks.task9.hint">(Егер Listbox қиын болса, Text-пен де жасауға болады: жаңа жолға
+                жазу.)</p>
+            <h4 data-i18="practice.14.tasks.task10.title">Тапсырма 10. “About” терезесі</h4>
+            <p data-i18="practice.14.tasks.task10.desc">Басты терезеде "Бағдарлама туралы" батырмасы болсын. Оны
+                басқанда жаңа кішкентай терезе (tk.Toplevel) ашылып, ішіне бағдарлама туралы қысқаша ақпарат шықсын.</p>
+            <h3 data-i18="practice.14.errors.title">6. Қателер және оларды түзету</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18="practice.14.errors.head.1">Қате</th>
+                        <th data-i18="practice.14.errors.head.2">Себебі</th>
+                        <th data-i18="practice.14.errors.head.3">Шешімі</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-i18="practice.14.errors.row1.1">Терезе ашылмайды</td>
+                        <td data-i18="practice.14.errors.row1.2">mainloop() жоқ</td>
+                        <td data-i18="practice.14.errors.row1.3">Соңында window.mainloop() жазу</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.14.errors.row2.1">Батырма жұмыс істемейді</td>
+                        <td data-i18="practice.14.errors.row2.2">command-ке дөңгелек жақшамен шақырып қойған
+                            (command=func())</td>
+                        <td data-i18="practice.14.errors.row2.3">Тек атауын беру: command=func</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.14.errors.row3.1">Мәтін шықпайды</td>
+                        <td data-i18="practice.14.errors.row3.2">entry.get() қолданылмаған</td>
+                        <td data-i18="practice.14.errors.row3.3">Entry-ден мәнді оқып, Label-ге беру</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.14.errors.row4.1">Виджет көрінбейді</td>
+                        <td data-i18="practice.14.errors.row4.2">pack()/grid() шақырылмаған</td>
+                        <td data-i18="practice.14.errors.row4.3">Орналастыру әдісін қолдану</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.14.errors.row5.1">Қате: TclError</td>
+                        <td data-i18="practice.14.errors.row5.2">Виджет жойылған, бірақ әлі қолданылып жатыр</td>
+                        <td data-i18="practice.14.errors.row5.3">Логиканы тексеру, қажетсіз destroy жасамау</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 data-i18="practice.14.questions.title">7. Бақылау сұрақтары</h3>
+            <ul>
+                <p data-i18="practice.14.questions.1">1. GUI деген не және Tkinter қандай рөл атқарады?</p>
+                <p data-i18="practice.14.questions.2">2. Tk(), mainloop() функциялары не үшін қажет?</p>
+                <p data-i18="practice.14.questions.3">3. Негізгі виджеттерді атаңыз (кемі 3–4).</p>
+                <p data-i18="practice.14.questions.4">4. pack() және grid() айырмашылығы қандай?</p>
+                <p data-i18="practice.14.questions.5">5. Батырмаға функцияны қалай байланыстырамыз (command)?</p>
+            </ul>
+
+            <div class="lecture-navigation">
+                <a href="practice_13.html" class="nav-button prev-button">←</a>
+
+                <a href="practice.html" class="page-number" data-i18="page-1">1</a>
+                <span class="dots">...</span>
+                <a href="practice_8.html" class="page-number" data-i18="page-8">8</a>
+                <a href="practice_9.html" class="page-number" data-i18="page-9">9</a>
+                <a href="practice_10.html" class="page-number" data-i18="page-10">10</a>
+                <a href="practice_11.html" class="page-number" data-i18="page-11">11</a>
+                <a href="practice_12.html" class="page-number" data-i18="page-11">12</a>
+                <a href="practice_13.html" class="page-number" data-i18="page-11">13</a>
+                <a href="practice_14.html" class="page-number current-page" data-i18="page-11">14</a>
+                <a href="practice_15.html" class="page-number" data-i18="page-11">15</a>
+
+                <a href="practice_15.html" class="nav-button next-button" data-i18="next-button">→</a>
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

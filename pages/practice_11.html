@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="nav.practice">Практика</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/practice.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="page-title-placeholder">
+            <h2 data-i18="practice.title">Практические Задания</h2>
+            <p data-i18="practice.description">Скоро здесь будет доступен полный набор практических задач для отработки
+                навыков программирования.</p>
+        </div>
+
+        <section class="practice-section" id="practice-11">
+            <h2 data-i18="practice.11.title">ПРАКТИКАЛЫҚ ЖҰМЫС №11</h2>
+            <h2 data-i18="practice.11.topic">Тақырыбы: Файлмен жұмыс тәжірибесі (File Handling)</h2>
+            <h3 data-i18="practice.11.goal.title">1. Практикалық жұмыстың мақсаты</h3>
+            <ul>
+                <li data-i18="practice.11.goal.list.1">Python тілінде файлдарды ашу, оқу, жазу тәсілдерін меңгеру;</li>
+                <li data-i18="practice.11.goal.list.2">Файл режимдерін (r, w, a, x) қолдануды үйрену;</li>
+                <li data-i18="practice.11.goal.list.3">Файлдан жол-жолымен оқу, толық оқу, файлға қосып жазу дағдыларын
+                    қалыптастыру;</li>
+                <li data-i18="practice.11.goal.list.4">with open() конструкциясын дұрыс пайдалану;</li>
+                <li data-i18="practice.11.goal.list.5">Файлмен байланысты қателерді өңдеуді тәжірибеде қолдану.</li>
+            </ul>
+            <h3 data-i18="practice.11.resources.title">2. Қажетті бағдарламалар</h3>
+            <ul>
+                <li data-i18="practice.11.resources.list.1">Python 3.10+</li>
+                <li data-i18="practice.11.resources.list.2">PyCharm / VS Code / Jupyter Notebook</li>
+            </ul>
+            <h3 data-i18="practice.11.theory.title">3. Теориялық бөлім</h3>
+            <h4 data-i18="practice.11.theory.subtitle1">3.1 Файл ашу синтаксисі</h4>
+            <pre><code>file = open("filename.txt", "mode")</code></pre>
+            <p data-i18="practice.11.theory.mode.title">Негізгі режимдер:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18="practice.11.theory.table.head1">Режим</th>
+                        <th data-i18="practice.11.theory.table.head2">Мағынасы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>r</td>
+                        <td data-i18="practice.11.theory.table.r">оқу</td>
+                    </tr>
+                    <tr>
+                        <td>w</td>
+                        <td data-i18="practice.11.theory.table.w">жазу (ескі файлды өшіреді)</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td data-i18="practice.11.theory.table.a">қосып жазу</td>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td data-i18="practice.11.theory.table.x">жаңа файл ғана жасау</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4 data-i18="practice.11.theory.subtitle2">3.2 Файлдан оқу тәсілдері</h4>
+            <p data-i18="practice.11.theory.read.1"><strong>1) read() — толық оқу</strong></p>
+            <pre><code>text = file.read()</code></pre>
+            <p data-i18="practice.11.theory.read.2"><strong>2) readline() — бір жол оқу</strong></p>
+            <pre><code>line = file.readline()</code></pre>
+            <p data-i18="practice.11.theory.read.3"><strong>3) readlines() — барлық жолдарды тізім ретінде оқу</strong>
+            </p>
+            <pre><code>lines = file.readlines()</code></pre>
+            <h4 data-i18="practice.11.theory.subtitle3">3.3 Файлға жазу</h4>
+            <pre><code>file = open("data.txt", "w")
+file.write("Hello!\n")
+file.close()
+</code></pre>
+            <h4 data-i18="practice.11.theory.subtitle4">3.4 with open() қолдану — қауіпсіз әдіс</h4>
+            <pre><code>with open("data.txt", "a") as f:
+    f.write("New line\n")
+</code></pre>
+            <p data-i18="practice.11.theory.close">Файл автоматты түрде жабылады.</p>
+            <h4 data-i18="practice.11.theory.subtitle5">3.5 Файл жоқ кезде қате өңдеу</h4>
+            <pre><code>try:
+    f = open("abc.txt")
+except FileNotFoundError:
+    print("Файл табылмады!")
+</code></pre>
+            <h3 data-i18="practice.11.steps.title">4. Практикалық жұмыс қадамдары</h3>
+            <h4 data-i18="practice.11.steps.step1.title">1-қадам. Файлға жазу</h4>
+            <p data-i18="practice.11.steps.step1.desc">Файл: <strong>file_test.txt</strong></p>
+            <pre><code>with open("file_test.txt", "w") as f:
+    f.write("Hello, students!\n")
+    f.write("This is a file test.")
+</code></pre>
+            <h4 data-i18="practice.11.steps.step2.title">2-қадам. Файлдан оқу</h4>
+            <pre><code>with open("file_test.txt", "r") as f:
+    print(f.read())
+</code></pre>
+            <h4 data-i18="practice.11.steps.step3.title">3-қадам. Файлға мәлімет қосу</h4>
+            <pre><code>with open("file_test.txt", "a") as f:
+    f.write("\nNew line added.")
+</code></pre>
+            <h4 data-i18="practice.11.steps.step4.title">4-қадам. Жол-жолымен оқу</h4>
+            <pre><code>with open("file_test.txt", "r") as f:
+    for line in f:
+        print(line.strip())
+</code></pre>
+            <h3 data-i18="practice.11.examples.title">5. Мысалдар</h3>
+            <h4 data-i18="practice.11.examples.example1.title">Мысал 1. Студенттер тізімін жазу</h4>
+            <pre><code>students = ["Aruzhan", "Dias", "Samat"]
+
+with open("students.txt", "w") as f:
+    for s in students:
+        f.write(s + "\n")
+</code></pre>
+            <h4 data-i18="practice.11.examples.example2.title">Мысал 2. Файлды жолымен оқу</h4>
+            <pre><code>with open("students.txt", "r") as f:
+    lines = f.readlines()
+    print(lines)
+</code></pre>
+            <h4 data-i18="practice.11.examples.example3.title">Мысал 3. try–except арқылы қате өңдеу</h4>
+            <pre><code>try:
+    with open("missing.txt", "r") as f:
+        print(f.read())
+except FileNotFoundError:
+    print("Файл жоқ!")
+</code></pre>
+            <h4 data-i18="practice.11.examples.example4.title">Мысал 4. Жаңа файл жасау</h4>
+            <pre><code>with open("newfile.txt", "x") as f:
+    f.write("Created new file.")
+</code></pre>
+            <h3 data-i18="practice.11.tasks.title">6. Практикалық тапсырмалар</h3>
+            <h4 data-i18="practice.11.tasks.task1.title">Тапсырма 1. Өзіңіздің алғашқы мәтін файлыңызды құрыңыз</h4>
+            <p data-i18="practice.11.tasks.task1.desc">Файлға кемінде 3 сөйлем жазыңыз.</p>
+            <h4 data-i18="practice.11.tasks.task2.title">Тапсырма 2. Файлдан оқу</h4>
+            <p data-i18="practice.11.tasks.task2.desc">Жоғарыда жазған файлды оқып, жол-жолымен шығарыңыз.</p>
+            <h4 data-i18="practice.11.tasks.task3.title">Тапсырма 3. Файлға қосу</h4>
+            <p data-i18="practice.11.tasks.task3.desc">Сол файлға қосымша 2 сөйлем қосыңыз.</p>
+            <h4 data-i18="practice.11.tasks.task4.title">Тапсырма 4. Сандық мәліметтермен файл жасау</h4>
+            <p data-i18="practice.11.tasks.task4.desc"><strong>t.txt</strong> файлына 1–10 аралығындағы сандарды
+                жол-жолымен жазыңыз.</p>
+            <h4 data-i18="practice.11.tasks.task5.title">Тапсырма 5. Файлдан сандарды оқып, олардың қосындысын табыңыз
+            </h4>
+            <h4 data-i18="practice.11.tasks.task6.title">Тапсырма 6. Қолданушы енгізген сөздерді файлға жазу</h4>
+            <p data-i18="practice.11.tasks.task6.desc">Қолданушы 5 сөз енгізеді → файлға сақталады.</p>
+            <h4 data-i18="practice.11.tasks.task7.title">Тапсырма 7. Файлдағы жол санын табу</h4>
+            <p data-i18="practice.11.tasks.task7.desc">Файлдан оқып, жол санын санаңыз.</p>
+            <h4 data-i18="practice.11.tasks.task8.title">Тапсырма 8. Файлдағы ең ұзын сөзді табу</h4>
+            <p data-i18="practice.11.tasks.task8.desc">Мәтіндік файлдан ең ұзын сөзді анықтаңыз.</p>
+            <h4 data-i18="practice.11.tasks.task9.title">Тапсырма 9. Екі файлды біріктіру</h4>
+            <p data-i18="practice.11.tasks.task9.desc">a.txt және b.txt файлдарының мазмұнын c.txt-ке көшіріңіз.</p>
+            <h4 data-i18="practice.11.tasks.task10.title">Тапсырма 10. Теріс сандарды анықтау</h4>
+            <p data-i18="practice.11.tasks.task10.desc">Файлдағы сандардан <strong>теріс</strong> сандарды бөліп
+                көрсетіңіз.</p>
+            <h3 data-i18="practice.11.error.title">7. Қателер және шешімдер</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18="practice.11.error.head.1">Қате</th>
+                        <th data-i18="practice.11.error.head.2">Себебі</th>
+                        <th data-i18="practice.11.error.head.3">Шешімі</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FileNotFoundError</td>
+                        <td data-i18="practice.11.error.row1.2">Файл жоқ</td>
+                        <td data-i18="practice.11.error.row1.3">try–except немесе файл атауын тексеру</td>
+                    </tr>
+                    <tr>
+                        <td>PermissionError</td>
+                        <td data-i18="practice.11.error.row2.2">Файлды ашуға рұқсат жоқ</td>
+                        <td data-i18="practice.11.error.row2.3">Файл орналасуын тексеру</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.11.error.row3.1">Ескі деректер өшіп қалды</td>
+                        <td data-i18="practice.11.error.row3.2">w режимі қолданылды</td>
+                        <td data-i18="practice.11.error.row3.3">Қажет болса a режимін пайдалану</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.11.error.row4.1">Файл жабылмау</td>
+                        <td data-i18="practice.11.error.row4.2">open() → close() ұмытылған</td>
+                        <td data-i18="practice.11.error.row4.3">with open() қолдану</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 data-i18="practice.11.questions.title">8. Бақылау сұрақтары</h3>
+            <ul>
+                <p data-i18="practice.11.questions.1">1. r, w, a режимдерінің айырмашылығы қандай?</p>
+                <p data-i18="practice.11.questions.2">2. with open() қолданудың артықшылығы неде?</p>
+                <p data-i18="practice.11.questions.3">3. read(), readline(), readlines() айырмашылығы?</p>
+                <p data-i18="practice.11.questions.4">4. FileNotFoundError қандай жағдайда шығады?</p>
+                <p data-i18="practice.11.questions.5">5. Жол-жолымен оқуды қалай жасаймыз?</p>
+            </ul>
+
+            <div class="lecture-navigation">
+                <a href="practice_10.html" class="nav-button prev-button">←</a>
+
+                <a href="practice.html" class="page-number" data-i18="page-1">1</a>
+                <span class="dots">...</span>
+                <a href="practice_5.html" class="page-number" data-i18="page-5">5</a>
+                <a href="practice_6.html" class="page-number" data-i18="page-6">6</a>
+                <a href="practice_7.html" class="page-number" data-i18="page-7">7</a>
+                <a href="practice_8.html" class="page-number" data-i18="page-8">8</a>
+                <a href="practice_9.html" class="page-number" data-i18="page-9">9</a>
+                <a href="practice_10.html" class="page-number" data-i18="page-10">10</a>
+                <a href="practice_11.html" class="page-number current-page" data-i18="page-11">11</a>
+                <a href="practice_12.html" class="page-number" data-i18="page-11">12</a>
+
+                <a href="practice_12.html" class="nav-button next-button" data-i18="next-button">→</a>
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

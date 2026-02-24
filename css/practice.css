@@ -1,0 +1,479 @@
+/* --- Адаптированный стиль для блока-заполнителя в стиле лекции --- */
+
+.page-title-placeholder {
+    /* 1. Общий фон и цвет текста */
+    text-align: center;
+    padding: 2rem 1rem; /* Отступы, как в примере лекции */
+    border-radius: 8px; /* Закругленные углы */
+    
+    /* Градиент из примера: синий/темно-синий */
+    background: linear-gradient(135deg, #4b79a1, #283e51); 
+    color: #fff; /* Белый текст */
+    
+    /* Тень для объема */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* Немного более выраженная тень */
+    
+    /* Дополнительные параметры, если нужно отделить от окружающего контента */
+    margin: 40px auto; 
+    max-width: 1200px; /* Ограничиваем ширину для центрирования */
+}
+
+.page-title-placeholder h2 {
+    /* Стиль Заголовка */
+    font-size: 2.2rem; /* Размер, как в примере лекции */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    color: #fff; /* Цвет остается белым, так как фон темный */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Легкая тень для выделения */
+    
+    /* Убираем любые нижние границы, которые могли быть у h2 в предыдущих стилях */
+    border-bottom: none; 
+    padding-bottom: 0;
+}
+
+.page-title-placeholder p {
+    /* Стиль Описания */
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.9;
+    color: #fff; /* Цвет остается белым */
+}
+
+.practice-section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.practice-section h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.practice-section h3 {
+  color: #34495e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.practice-section h4 {
+  color: #555;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.practice-section ul {
+  margin: 10px 0 20px 20px;
+  padding: 0;
+}
+
+.practice-section ul li {
+  margin-bottom: 6px;
+}
+
+.practice-section p {
+  margin: 8px 0;
+}
+
+.practice-section pre {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: Consolas, monospace;
+  color: #2c3e50;
+}
+
+.practice-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.practice-section table th,
+.practice-section table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.practice-section table th {
+  background: #3498db;
+  color: #fff;
+}
+
+.practice-section table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.practice-section a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.practice-section a:hover {
+  text-decoration: underline;
+}
+
+/* Контейнер навигации */
+.lecture-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Кнопки "←" и "→" */
+.lecture-navigation .nav-button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background-color: #4b79a1;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.lecture-navigation .nav-button:hover {
+    background-color: #35516d;
+}
+
+/* Номера страниц */
+.lecture-navigation .page-number {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.lecture-navigation .page-number:hover {
+    background-color: #d9e6f2;
+    color: #000;
+}
+
+/* Текущая страница */
+.lecture-navigation .current-page {
+    background-color: #4b79a1;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ====================================
+   RESPONSIVE MEDIA QUERIES - PRACTICE
+   ==================================== */
+
+/* Large Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .page-title-placeholder {
+        padding: 2rem 1.5rem;
+        margin: 35px auto;
+    }
+
+    .page-title-placeholder h2 {
+        font-size: 2rem;
+    }
+
+    .page-title-placeholder p {
+        font-size: 1.05rem;
+    }
+
+    .practice-section {
+        max-width: 1100px;
+        padding: 2rem;
+        margin: 25px auto;
+    }
+
+    .practice-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .practice-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .practice-section table {
+        font-size: 0.95rem;
+    }
+
+    .practice-section table th,
+    .practice-section table td {
+        padding: 0.7rem 1rem;
+    }
+
+    .lecture-navigation {
+        gap: 0.6rem;
+        margin: 1.8rem 0;
+    }
+
+    .lecture-navigation .nav-button {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .page-title-placeholder {
+        padding: 1.5rem 1rem;
+        margin: 30px auto;
+    }
+
+    .page-title-placeholder h2 {
+        font-size: 1.8rem;
+    }
+
+    .page-title-placeholder p {
+        font-size: 1rem;
+    }
+
+    .practice-section {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .practice-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .practice-section h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .practice-section h4 {
+        font-size: 1.05rem;
+        margin-top: 0.8rem;
+    }
+
+    .practice-section p {
+        font-size: 0.95rem;
+    }
+
+    .practice-section ul {
+        margin: 0.8rem 0 1.5rem 1.5rem;
+    }
+
+    .practice-section pre {
+        font-size: 0.85rem;
+        padding: 0.8rem;
+    }
+
+    .practice-section table {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    .page-title-placeholder {
+        padding: 1.2rem 0.8rem;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+
+    .page-title-placeholder h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .page-title-placeholder p {
+        font-size: 0.9rem;
+    }
+
+    .practice-section {
+        margin: 15px auto;
+        padding: 1.2rem 0.8rem;
+        border-radius: 6px;
+    }
+
+    .practice-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.6rem;
+        padding-bottom: 0.4rem;
+    }
+
+    .practice-section h3 {
+        font-size: 1.05rem;
+        margin-top: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .practice-section h4 {
+        font-size: 0.95rem;
+        margin-top: 0.6rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .practice-section p {
+        font-size: 0.9rem;
+        margin: 0.6rem 0;
+        line-height: 1.5;
+    }
+
+    .practice-section ul {
+        margin: 0.6rem 0 1.2rem 1.2rem;
+        padding: 0;
+    }
+
+    .practice-section ul li {
+        margin-bottom: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .practice-section pre {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        overflow-x: auto;
+    }
+
+    .practice-section table {
+        font-size: 0.85rem;
+        margin: 1rem 0;
+    }
+
+    .practice-section table th,
+    .practice-section table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Small phones (480px and below) */
+@media (max-width: 480px) {
+    .page-title-placeholder {
+        padding: 1rem 0.6rem;
+        margin: 15px auto;
+    }
+
+    .page-title-placeholder h2 {
+        font-size: 1.2rem;
+    }
+
+    .page-title-placeholder p {
+        font-size: 0.85rem;
+    }
+
+    .practice-section {
+        margin: 12px auto;
+        padding: 1rem 0.6rem;
+    }
+
+    .practice-section h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .practice-section h3 {
+        font-size: 0.95rem;
+        margin-top: 0.7rem;
+    }
+
+    .practice-section h4 {
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
+
+    .practice-section p {
+        font-size: 0.85rem;
+        margin: 0.5rem 0;
+    }
+
+    .practice-section ul {
+        margin: 0.5rem 0 1rem 1rem;
+    }
+
+    .practice-section ul li {
+        margin-bottom: 0.3rem;
+        font-size: 0.85rem;
+    }
+
+    .practice-section pre {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .practice-section table {
+        font-size: 0.75rem;
+    }
+
+    .practice-section table th,
+    .practice-section table td {
+        padding: 0.4rem;
+    }
+}
+
+/* Extra small (360px and below) */
+@media (max-width: 360px) {
+    .page-title-placeholder {
+        padding: 0.8rem 0.5rem;
+        margin: 10px auto;
+    }
+
+    .page-title-placeholder h2 {
+        font-size: 1.1rem;
+    }
+
+    .page-title-placeholder p {
+        font-size: 0.8rem;
+    }
+
+    .practice-section {
+        margin: 10px auto;
+        padding: 0.8rem 0.5rem;
+    }
+
+    .practice-section h2 {
+        font-size: 1rem;
+    }
+
+    .practice-section h3 {
+        font-size: 0.9rem;
+    }
+
+    .practice-section h4 {
+        font-size: 0.8rem;
+    }
+
+    .practice-section p {
+        font-size: 0.8rem;
+    }
+
+    .practice-section ul {
+        margin: 0.4rem 0 0.8rem 0.8rem;
+    }
+
+    .practice-section ul li {
+        font-size: 0.8rem;
+    }
+
+    .practice-section pre {
+        font-size: 0.7rem;
+        padding: 0.4rem;
+    }
+
+    .practice-section table {
+        font-size: 0.7rem;
+    }
+
+    .practice-section table th,
+    .practice-section table td {
+        padding: 0.3rem;
+    }
+}

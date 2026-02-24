@@ -1,0 +1,386 @@
+/* Documentation Styles (docs.html) */
+
+.docs-wrapper {
+    display: flex;
+    max-width: 1400px;
+    margin: 30px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.docs-sidebar {
+    width: 250px;
+    background-color: #f5f5f5;
+    padding: 30px 20px;
+    border-right: 1px solid #e0e0e0;
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
+}
+
+.docs-sidebar h3 {
+    color: #366994;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
+}
+
+.docs-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.docs-nav ul li {
+    margin-bottom: 5px;
+}
+
+.docs-nav ul li a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #555;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.docs-nav ul li a:hover {
+    background-color: #e0eaff;
+    color: #366994;
+}
+
+.docs-nav ul ul {
+    padding-left: 20px;
+    margin-top: 5px;
+    font-size: 0.95em;
+}
+
+.docs-nav ul ul li a {
+    padding: 5px 10px;
+    color: #777;
+}
+
+/* Docs Content */
+.docs-content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.docs-content h2 {
+    color: #366994;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #366994;
+    padding-bottom: 10px;
+}
+
+.docs-content h3 {
+    color: #ffd700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.docs-content h4 {
+    color: #366994;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.docs-content p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Code Example Formatting */
+.code-example {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.code-example code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #0077b3; /* Python-like blue */
+}
+
+/* Responsive for Docs */
+@media (max-width: 992px) {
+    .docs-wrapper {
+        flex-direction: column;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+    }
+
+    .docs-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .docs-content {
+        padding: 20px;
+    }
+}
+
+/* Large Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .docs-wrapper {
+        border-radius: 10px;
+    }
+
+    .docs-sidebar {
+        width: 280px;
+        padding: 25px 18px;
+    }
+
+    .docs-sidebar h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .docs-nav ul li a {
+        padding: 7px 9px;
+        font-size: 0.93rem;
+    }
+
+    .docs-content {
+        padding: 35px;
+    }
+
+    .docs-content h2 {
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+    }
+
+    .docs-content h3 {
+        font-size: 1.25rem;
+        margin-top: 22px;
+    }
+
+    .code-example {
+        padding: 14px;
+        margin: 18px 0;
+    }
+
+    .code-example code {
+        font-size: 13px;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .docs-wrapper {
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+
+    .docs-sidebar {
+        width: 100%;
+        padding: 20px 15px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .docs-sidebar h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .docs-nav ul li a {
+        padding: 6px 8px;
+        font-size: 0.95rem;
+    }
+
+    .docs-content {
+        padding: 25px 15px;
+    }
+
+    .docs-content h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .docs-content h3 {
+        font-size: 1.3rem;
+        margin-top: 20px;
+    }
+
+    .code-example {
+        padding: 12px;
+        margin: 15px 0;
+    }
+
+    .code-example code {
+        font-size: 12px;
+    }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    .docs-wrapper {
+        margin: 15px auto;
+        border-radius: 6px;
+    }
+
+    .docs-sidebar {
+        padding: 15px 12px;
+    }
+
+    .docs-sidebar h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+    }
+
+    .docs-nav ul li a {
+        padding: 5px 6px;
+        font-size: 0.9rem;
+    }
+
+    .docs-nav ul ul {
+        padding-left: 15px;
+        margin-top: 3px;
+    }
+
+    .docs-content {
+        padding: 15px 10px;
+    }
+
+    .docs-content h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .docs-content h3 {
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+
+    .docs-content h4 {
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+
+    .docs-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .code-example {
+        padding: 10px;
+        margin: 12px 0;
+        border-radius: 4px;
+    }
+
+    .code-example code {
+        font-size: 11px;
+    }
+}
+
+/* Small phones (480px and below) */
+@media (max-width: 480px) {
+    .docs-wrapper {
+        margin: 10px auto;
+    }
+
+    .docs-sidebar {
+        padding: 12px 10px;
+    }
+
+    .docs-sidebar h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .docs-nav ul li a {
+        padding: 4px 5px;
+        font-size: 0.85rem;
+    }
+
+    .docs-content {
+        padding: 12px 8px;
+    }
+
+    .docs-content h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .docs-content h3 {
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+
+    .docs-content h4 {
+        font-size: 0.9rem;
+    }
+
+    .docs-content p {
+        font-size: 0.9rem;
+    }
+
+    .code-example {
+        padding: 8px;
+        margin: 10px 0;
+    }
+
+    .code-example code {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+}
+
+/* Extra small (360px and below) */
+@media (max-width: 360px) {
+    .docs-wrapper {
+        margin: 5px auto;
+        border-radius: 4px;
+    }
+
+    .docs-sidebar {
+        padding: 10px 8px;
+    }
+
+    .docs-sidebar h3 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .docs-nav ul li a {
+        padding: 3px 4px;
+        font-size: 0.8rem;
+    }
+
+    .docs-content {
+        padding: 10px 6px;
+    }
+
+    .docs-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .docs-content h3 {
+        font-size: 0.95rem;
+    }
+
+    .docs-content p {
+        font-size: 0.85rem;
+    }
+
+    .code-example {
+        padding: 6px;
+        margin: 8px 0;
+    }
+
+    .code-example code {
+        font-size: 9px;
+    }
+}

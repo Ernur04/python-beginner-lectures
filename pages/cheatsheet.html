@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="cheatsheet.pageTitle">Python: Быстрая шпаргалка по основным командам</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cheatsheet.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="page-title-placeholder">
+            <h2 data-i18="cheatsheet.title">Шпаргалка по Python</h2>
+            <p data-i18="cheatsheet.description">Краткий справочник по ключевому синтаксису и основным конструкциям
+                языка Python.</p>
+        </section>
+
+        <div class="cheatsheet-layout">
+
+            <aside class="sidebar">
+                <h3 data-i18="sidebar.title">Разделы</h3>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#basic" data-i18="sidebar.basic">Основные команды</a></li>
+                        <li><a href="#variables" data-i18="sidebar.variables">Переменные и типы</a></li>
+                        <li><a href="#conditions" data-i18="sidebar.conditions">Условия (if/else)</a></li>
+                        <li><a href="#loops" data-i18="sidebar.loops">Циклы (for/while)</a></li>
+                        <li><a href="#functions" data-i18="sidebar.functions">Функции</a></li>
+                        <li><a href="#collections" data-i18="sidebar.collections">Списки и Словари</a></li>
+                        <li><a href="#tuples" data-i18="sidebar.tuples">Кортежи</a></li>
+                        <li><a href="#sets" data-i18="sidebar.sets">Множества</a></li>
+                        <li><a href="#strings" data-i18="sidebar.strings">Строки</a></li>
+                        <li><a href="#fileio" data-i18="sidebar.fileio">Файлы</a></li>
+                        <li><a href="#exceptions" data-i18="sidebar.exceptions">Обработка ошибок</a></li>
+                        <li><a href="#modules" data-i18="sidebar.modules">Модули</a></li>
+                        <li><a href="#lambda" data-i18="sidebar.lambda">Lambda функции</a></li>
+                        <li><a href="#comprehensions" data-i18="sidebar.comprehensions">Comprehensions</a></li>
+                        <li><a href="#oop" data-i18="sidebar.oop">Основы ООП</a></li>
+                        <li><a href="#classes" data-i18="sidebar.classes">Классы</a></li>
+                        <li><a href="#inheritance" data-i18="sidebar.inheritance">Наследование</a></li>
+                        <li><a href="#decorators" data-i18="sidebar.decorators">Декораторы</a></li>
+                        <li><a href="#generators" data-i18="sidebar.generators">Генераторы</a></li>
+                        <li><a href="#json" data-i18="sidebar.json">JSON</a></li>
+                        <li><a href="#datetime" data-i18="sidebar.datetime">Дата/Время</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <div class="main-content">
+                <section class="cheatsheet-grid">
+
+                    <!-- Существующие карточки -->
+                    <article class="cheatsheet-card" id="basic">
+                        <h3 data-i18="cheat.basic.title">Основные команды</h3>
+                        <pre class="cheat-code"><code># Вывод данных
+    print("Hello, World!")
+
+    # Ввод данных
+    name = input("Введите имя: ")</code></pre>
+                        <p data-i18="cheat.basic.desc">Функции для взаимодействия с пользователем и консолью.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="variables">
+                        <h3 data-i18="cheat.variables.title">Переменные и типы</h3>
+                        <pre class="cheat-code"><code># Целые числа
+    age = 25
+    # Числа с плавающей точкой
+    pi = 3.14159
+    # Строки
+    message = "Python"
+    # Логические
+    is_active = True</code></pre>
+                        <p data-i18="cheat.variables.desc">В Python типы данных определяются автоматически.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="conditions">
+                        <h3 data-i18="cheat.conditions.title">Условия (if/elif/else)</h3>
+                        <pre class="cheat-code"><code>if x > 10:
+        print("Больше десяти")
+    elif x == 10:
+        print("Равно десяти")
+    else:
+        print("Меньше десяти")</code></pre>
+                        <p data-i18="cheat.conditions.desc">Управление ходом выполнения программы.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="loops">
+                        <h3 data-i18="cheat.forloop.title">Цикл For</h3>
+                        <pre class="cheat-code"><code># Перебор списка
+    fruits = ["яблоко", "банан"]
+    for item in fruits:
+        print(item)
+
+    # Перебор диапазона
+    for i in range(5): 
+        print(i) # 0, 1, 2, 3, 4</code></pre>
+                        <p data-i18="cheat.forloop.desc">Используется для итерации по последовательностям.</p>
+                    </article>
+
+                    <article class="cheatsheet-card">
+                        <h3 data-i18="cheat.whileloop.title">Цикл While</h3>
+                        <pre class="cheat-code"><code>count = 0
+    while count < 3:
+        print(count)
+        count += 1</code></pre>
+                        <p data-i18="cheat.whileloop.desc">Повторяет блок кода, пока условие истинно.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="functions">
+                        <h3 data-i18="cheat.functions.title">Функции</h3>
+                        <pre class="cheat-code"><code>def greet(name):
+        return f"Привет, {name}!"
+
+    result = greet("Пользователь")
+    print(result)</code></pre>
+                        <p data-i18="cheat.functions.desc">Используются для организации кода и его повторного
+                            использования.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="collections">
+                        <h3 data-i18="cheat.lists.title">Списки (List)</h3>
+                        <pre class="cheat-code"><code>my_list = [1, 2, 3, "a"]
+    my_list.append(4) # [1, 2, 3, "a", 4]
+    print(my_list[0]) # 1
+    print(len(my_list)) # 5</code></pre>
+                        <p data-i18="cheat.lists.desc">Упорядоченные, изменяемые коллекции элементов.</p>
+                    </article>
+
+                    <article class="cheatsheet-card">
+                        <h3 data-i18="cheat.dicts.title">Словари (Dict)</h3>
+                        <pre class="cheat-code"><code>person = {
+        "name": "Alex",
+        "age": 30
+    }
+    print(person["name"]) # Alex
+    person["city"] = "NY"</code></pre>
+                        <p data-i18="cheat.dicts.desc">Неупорядоченные коллекции пар ключ:значение.</p>
+                    </article>
+
+                    <!-- НОВЫЕ КАРТОЧКИ (+15) -->
+
+                    <article class="cheatsheet-card" id="tuples">
+                        <h3 data-i18="cheat.tuples.title">Кортежи (Tuple)</h3>
+                        <pre class="cheat-code"><code>point = (10, 20)
+    x, y = point  # распаковка
+    # Неизменяемые!
+    print(point[0]) # 10</code></pre>
+                        <p data-i18="cheat.tuples.desc">Неизменяемые упорядоченные коллекции.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="sets">
+                        <h3 data-i18="cheat.sets.title">Множества (Set)</h3>
+                        <pre class="cheat-code"><code>unique = {1, 2, 2, 3}  # {1, 2, 3}
+    unique.add(4)
+    unique.remove(2)
+    print(1 in unique) # True</code></pre>
+                        <p data-i18="cheat.sets.desc">Уникальные неизменяемые элементы.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="strings">
+                        <h3 data-i18="cheat.strings.title">Строки</h3>
+                        <pre class="cheat-code"><code>s = "Python"
+    print(s.upper())     # PYTHON
+    print(s.split())     # ['Python']
+    print(f"{s} 3.12")   # Python 3.12
+    print(s[0:3])        # Pyt</code></pre>
+                        <p data-i18="cheat.strings.desc">Неизменяемые последовательности символов.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="fileio">
+                        <h3 data-i18="cheat.fileio.title">Работа с файлами</h3>
+                        <pre class="cheat-code"><code># Чтение
+    with open('file.txt', 'r') as f:
+        data = f.read()
+
+    # Запись
+    with open('file.txt', 'w') as f:
+        f.write("Hello!")</code></pre>
+                        <p data-i18="cheat.fileio.desc">Автоматическое закрытие файлов с with.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="exceptions">
+                        <h3 data-i18="cheat.exceptions.title">Обработка ошибок</h3>
+                        <pre class="cheat-code"><code>try:
+        x = 1 / 0
+    except ZeroDivisionError:
+        print("Деление на ноль!")
+    except Exception as e:
+        print(f"Ошибка: {e}")
+    else:
+        print("Успех!")
+    finally:
+        print("Всегда выполняется")</code></pre>
+                        <p data-i18="cheat.exceptions.desc">Контроль ошибок выполнения.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="modules">
+                        <h3 data-i18="cheat.modules.title">Модули</h3>
+                        <pre class="cheat-code"><code>import math
+    print(math.sqrt(16))  # 4.0
+
+    import random as r
+    print(r.randint(1, 10))
+
+    from datetime import datetime
+    print(datetime.now())</code></pre>
+                        <p data-i18="cheat.modules.desc">Подключение библиотек и модулей.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="lambda">
+                        <h3 data-i18="cheat.lambda.title">Lambda функции</h3>
+                        <pre class="cheat-code"><code>square = lambda x: x ** 2
+    print(square(5))  # 25
+
+    # Сортировка
+    pairs = [(1, 'one'), (3, 'three')]
+    pairs.sort(key=lambda x: x[1])
+    print(pairs)</code></pre>
+                        <p data-i18="cheat.lambda.desc">Анонимные однострочные функции.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="comprehensions">
+                        <h3 data-i18="cheat.comprehensions.title">Comprehensions</h3>
+                        <pre class="cheat-code"><code># List comprehension
+    squares = [x**2 for x in range(5)]  # [0,1,4,9,16]
+
+    # Dict comprehension
+    unique = {x: x**2 for x in range(5)}
+
+    # Условный
+    evens = [x for x in range(10) if x % 2 == 0]</code></pre>
+                        <p data-i18="cheat.comprehensions.desc">Краткая запись циклов.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="oop">
+                        <h3 data-i18="cheat.oop.title">Основы ООП</h3>
+                        <pre class="cheat-code"><code>class Dog:
+        def __init__(self, name):
+            self.name = name
+        
+        def bark(self):
+            return f"{self.name} говорит: Гав!"
+
+    my_dog = Dog("Рекс")
+    print(my_dog.bark())</code></pre>
+                        <p data-i18="cheat.oop.desc">Классы и объекты.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="classes">
+                        <h3 data-i18="cheat.classes.title">Классы и методы</h3>
+                        <pre class="cheat-code"><code>class Person:
+        species = "Homo Sapiens"  # классовый атрибут
+        
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+        
+        @classmethod
+        def get_species(cls):
+            return cls.species
+        
+        @staticmethod
+        def is_adult(age):
+            return age >= 18</code></pre>
+                        <p data-i18="cheat.classes.desc">Методы класса и статики.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="inheritance">
+                        <h3 data-i18="cheat.inheritance.title">Наследование</h3>
+                        <pre class="cheat-code"><code>class Animal:
+        def speak(self):
+            return "Звук"
+
+    class Cat(Animal):
+        def speak(self):
+            return "Мяу!"
+
+    class Dog(Animal):
+        def speak(self):
+            return "Гав!"
+
+    cat = Cat()
+    print(cat.speak())  # Мяу!</code></pre>
+                        <p data-i18="cheat.inheritance.desc">Переиспользование кода через наследование.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="decorators">
+                        <h3 data-i18="cheat.decorators.title">Декораторы</h3>
+                        <pre class="cheat-code"><code>def timer(func):
+        import time
+        def wrapper(*args, **kwargs):
+            start = time.time()
+            result = func(*args, **kwargs)
+            print(f"Время: {time.time()-start:.2f}")
+            return result
+        return wrapper
+
+    @timer
+    def slow_function():
+        time.sleep(1)
+        return "Готово"
+
+    slow_function()</code></pre>
+                        <p data-i18="cheat.decorators.desc">Модификация функций без изменения кода.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="generators">
+                        <h3 data-i18="cheat.generators.title">Генераторы</h3>
+                        <pre class="cheat-code"><code># Генераторная функция
+    def countdown(n):
+        while n > 0:
+            yield n
+            n -= 1
+
+    # Использование
+    for num in countdown(3):
+        print(num)  # 3, 2, 1
+
+    # Generator expression
+    squares = (x**2 for x in range(5))</code></pre>
+                        <p data-i18="cheat.generators.desc">Ленивые итераторы для экономии памяти.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="json">
+                        <h3 data-i18="cheat.json.title">JSON</h3>
+                        <pre class="cheat-code"><code>import json
+
+    # В JSON
+    data = {"name": "Alex", "age": 30}
+    json_str = json.dumps(data)
+
+    # Из JSON
+    data = json.loads(json_str)
+    print(data["name"])  # Alex
+
+    # В/из файл
+    json.dump(data, open('data.json', 'w'))
+    data = json.load(open('data.json'))</code></pre>
+                        <p data-i18="cheat.json.desc">Работа с JSON данными.</p>
+                    </article>
+
+                    <article class="cheatsheet-card" id="datetime">
+                        <h3 data-i18="cheat.datetime.title">Дата и время</h3>
+                        <pre class="cheat-code"><code>from datetime import datetime, timedelta
+
+    now = datetime.now()
+    print(now.strftime("%Y-%m-%d %H:%M"))  # 2025-11-27 10:30
+
+    # Парсинг
+    dt = datetime.strptime("2025-11-27", "%Y-%m-%d")
+
+    # Арифметика
+    future = now + timedelta(days=7)</code></pre>
+                        <p data-i18="cheat.datetime.desc">Работа с датами и временем.</p>
+                    </article>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

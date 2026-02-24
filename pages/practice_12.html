@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="nav.practice">Практика</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/practice.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫс ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫс ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="page-title-placeholder">
+            <h2 data-i18="practice.title">Практические Задания</h2>
+            <p data-i18="practice.description">Скоро здесь будет доступен полный набор практических задач для отработки
+                навыков программирования.</p>
+        </div>
+
+        <section class="practice-section" id="practice-12">
+            <h2 data-i18="practice.12.title">ПРАКТИКАЛЫҚ ЖҰМЫС №12</h2>
+            <h2 data-i18="practice.12.topic">Тақырыбы: Ерекшеліктерді өңдеу (Exception Handling: try/except)</h2>
+            <h3 data-i18="practice.12.goal.title">1. Практикалық жұмыстың мақсаты</h3>
+            <ul>
+                <li data-i18="practice.12.goal.list.1">Python-дағы <strong>ерекшеліктер (exceptions)</strong> ұғымын
+                    түсіну;</li>
+                <li data-i18="practice.12.goal.list.2">Қателердің түрлерін тану және оларды өңдеу;</li>
+                <li data-i18="practice.12.goal.list.3"><strong>try, except, else, finally</strong> конструкцияларын
+                    қолдануды меңгеру;</li>
+                <li data-i18="practice.12.goal.list.4">Бағдарламаның бұзылмай жұмыс істеуін қамтамасыз ету;</li>
+                <li data-i18="practice.12.goal.list.5">Көп жағдайда туындайтын қателерді болжау және өңдеу тәжірибесін
+                    қалыптастыру.</li>
+            </ul>
+            <h3 data-i18="practice.12.resources.title">2. Қажетті бағдарламалар</h3>
+            <ul>
+                <li data-i18="practice.12.resources.list.1">Python 3.10+</li>
+                <li data-i18="practice.12.resources.list.2">PyCharm / VS Code / Jupyter Notebook</li>
+            </ul>
+            <h3 data-i18="practice.12.theory.title">3. Теориялық бөлім</h3>
+            <h4 data-i18="practice.12.theory.subtitle1">3.1 Ерекшеліктер деген не?</h4>
+            <p data-i18="practice.12.theory.exception.what">Ерекшелік — бағдарлама орындалу кезінде туындайтын қате.</p>
+            <p data-i18="practice.12.theory.exception.example">Мысалы:</p>
+            <pre><code>x = int("abc")   # ValueError</code></pre>
+            <p data-i18="practice.12.theory.exception.stop">Бағдарлама автоматты түрде тоқтап қалады. <br>Оны тоқтатпау
+                үшін <strong>try/except</strong> қолданылады.</p>
+            <h4 data-i18="practice.12.theory.subtitle2">3.2 try/except негізгі құрылымы</h4>
+            <pre>try:
+    # Қате болуы мүмкін код
+except:
+    # Қате болғанда орындалатын код
+</pre>
+            <h4 data-i18="practice.12.theory.subtitle3">3.3 Белгілі қате түрін өңдеу</h4>
+            <pre><code>try:
+    x = int(input("Сан енгіз: "))
+except ValueError:
+    print("Сан енгізу керек!")
+</code></pre>
+            <h4 data-i18="practice.12.theory.subtitle4">3.4 Бірнеше except қолдану</h4>
+            <pre><code>try:
+    f = open("data.txt")
+    num = int("abc")
+except FileNotFoundError:
+    print("Файл табылмады!")
+except ValueError:
+    print("Сан дұрыс емес!")
+</code></pre>
+            <h4 data-i18="practice.12.theory.subtitle5">3.5 else блогы</h4>
+            <pre><code>try:
+    x = int(input("Сан: "))
+except ValueError:
+    print("Қате!")
+else:
+    print("Енгізілген сан:", x)
+</code></pre>
+            <h4 data-i18="practice.12.theory.subtitle6">3.6 finally блогы</h4>
+            <p data-i18="practice.12.theory.finally.desc">Қате болсын-болмасын міндетті түрде орындалады.</p>
+            <pre><code>try:
+    f = open("file.txt")
+except:
+    print("Қате!")
+finally:
+    print("Процесс аяқталды.")
+</code></pre>
+            <h3 data-i18="practice.12.errors.title">4. Көп кездесетін қателер</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18="practice.12.errors.head.1">Қате түрі</th>
+                        <th data-i18="practice.12.errors.head.2">Қай кезде шығады?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ValueError</td>
+                        <td data-i18="practice.12.errors.row1.2">Сан емес мән енгізгенде</td>
+                    </tr>
+                    <tr>
+                        <td>ZeroDivisionError</td>
+                        <td data-i18="practice.12.errors.row2.2">0-ге бөлу кезі</td>
+                    </tr>
+                    <tr>
+                        <td>FileNotFoundError</td>
+                        <td data-i18="practice.12.errors.row3.2">Файл табылмаған кезде</td>
+                    </tr>
+                    <tr>
+                        <td>TypeError</td>
+                        <td data-i18="practice.12.errors.row4.2">Қате типтермен операция жасағанда</td>
+                    </tr>
+                    <tr>
+                        <td>IndexError</td>
+                        <td data-i18="practice.12.errors.row5.2">Индекс диапазоннан тыс</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 data-i18="practice.12.steps.title">5. Практикалық жұмыс қадамдары</h3>
+            <h4 data-i18="practice.12.steps.step1.title">1-қадам. Файл құру</h4>
+            <p data-i18="practice.12.steps.step1.desc">Файл: <strong>exceptions.py</strong></p>
+            <h4 data-i18="practice.12.steps.step2.title">2-қадам. Қарапайым try/except</h4>
+            <pre><code>try:
+    x = int(input("Сан енгіз: "))
+    print("Сан:", x)
+except ValueError:
+    print("Сан енгізу керек!")
+</code></pre>
+            <h4 data-i18="practice.12.steps.step3.title">3-қадам. Бірнеше except тексеру</h4>
+            <pre><code>try:
+    a = int(input("a: "))
+    b = int(input("b: "))
+    print(a / b)
+except ZeroDivisionError:
+    print("0-ге бөлуге болмайды!")
+except ValueError:
+    print("Сан енгізіңіз!")
+</code></pre>
+            <h4 data-i18="practice.12.steps.step4.title">4-қадам. finally қолдану</h4>
+            <pre><code>try:
+    f = open("test.txt")
+except FileNotFoundError:
+    print("Файл жоқ!")
+finally:
+    print("Орындалды.")
+</code></pre>
+            <h3 data-i18="practice.12.examples.title">6. Мысалдар</h3>
+            <h4 data-i18="practice.12.examples.example1.title">Мысал 1. Сан енгізу бақылауы</h4>
+            <pre><code>while True:
+    try:
+        n = int(input("Сан енгіз: "))
+        break
+    except ValueError:
+        print("Қате! Тағы енгізіңіз.")
+</code></pre>
+            <h4 data-i18="practice.12.examples.example2.title">Мысал 2. Файл оқу</h4>
+            <pre><code>try:
+    with open("data.txt") as f:
+        print(f.read())
+except FileNotFoundError:
+    print("Файл табылмады!")
+</code></pre>
+            <h4 data-i18="practice.12.examples.example3.title">Мысал 3. Калькулятор (қате өңдеумен)</h4>
+            <pre><code>try:
+    a = float(input("a: "))
+    b = float(input("b: "))
+    print("Нәтиже:", a / b)
+except ZeroDivisionError:
+    print("Нөлге бөлуге болмайды!")
+except ValueError:
+    print("Сандарды дұрыс енгізіңіз!")
+</code></pre>
+            <h3 data-i18="practice.12.tasks.title">7. Практикалық тапсырмалар</h3>
+            <h4 data-i18="practice.12.tasks.task1.title">Тапсырма 1. Сан енгізуді қате өңдеу</h4>
+            <p data-i18="practice.12.tasks.task1.desc">Пайдаланушы сан емес нәрсе енгізсе → хабарлама шығару.</p>
+            <h4 data-i18="practice.12.tasks.task2.title">Тапсырма 2. 0-ге бөлуді өңдеу</h4>
+            <p data-i18="practice.12.tasks.task2.desc">Екі сан енгізіп, бөлуді орындаңыз. <br>Егер b = 0 болса → қате
+                туралы хабарлама.</p>
+            <h4 data-i18="practice.12.tasks.task3.title">Тапсырма 3. Файл ашу</h4>
+            <p data-i18="practice.12.tasks.task3.desc">Файл жоқ болса "Файл табылмады" деп шығару.</p>
+            <h4 data-i18="practice.12.tasks.task4.title">Тапсырма 4. Индекс қатесін өңдеу</h4>
+            <p data-i18="practice.12.tasks.task4.list">Тізім:</p>
+            <pre><code>lst = [1, 2, 3]</code></pre>
+            <p data-i18="practice.12.tasks.task4.desc">Пайдаланушы индекс енгізеді. Индекс диапазоннан тыс болса → қате
+                өңдеу.</p>
+            <h4 data-i18="practice.12.tasks.task5.title">Тапсырма 5. Қолданушы жасын тексеру</h4>
+            <p data-i18="practice.12.tasks.task5.desc">Пайдаланушы жасын енгізеді. Сан емес енгізсе → қайта сұрау.</p>
+            <h4 data-i18="practice.12.tasks.task6.title">Тапсырма 6. Калькулятор жазу</h4>
+            <p data-i18="practice.12.tasks.task6.desc">4 амал: +, -, *, / <br>Қате енгізсе → except арқылы өңдеу.</p>
+            <h4 data-i18="practice.12.tasks.task7.title">Тапсырма 7. Функция ішіндегі try/except</h4>
+            <pre><code>def to_int(x):
+    return int(x)
+</code></pre>
+            <p data-i18="practice.12.tasks.task7.desc">Қате болса "Санға түрленбейді" деп қайтару.</p>
+            <h4 data-i18="practice.12.tasks.task8.title">Тапсырма 8. finally қолдану</h4>
+            <p data-i18="practice.12.tasks.task8.desc">Файл ашуға тырысып, соңында "Процесс аяқталды" деп шығару.</p>
+            <h4 data-i18="practice.12.tasks.task9.title">Тапсырма 9. Бірнеше except</h4>
+            <p data-i18="practice.12.tasks.task9.desc">Пайдаланушыдан енгізу → ValueError, TypeError, ZeroDivisionError
+                қателерін бөлек өңдеу.</p>
+            <h4 data-i18="practice.12.tasks.task10.title">Тапсырма 10. Цикл ішінде қате өңдеу</h4>
+            <p data-i18="practice.12.tasks.task10.desc">Қолданушы теріс сан енгізгенше цикл жалғасады. Теріс сан енгізсе
+                → ерекше хабарлама.</p>
+            <h3 data-i18="practice.12.solution.title">8. Қателер және шешімдер</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18="practice.12.solution.head.1">Қате</th>
+                        <th data-i18="practice.12.solution.head.2">Себебі</th>
+                        <th data-i18="practice.12.solution.head.3">Шешімі</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ValueError</td>
+                        <td data-i18="practice.12.solution.row1.2">Сан емес енгізу</td>
+                        <td data-i18="practice.12.solution.row1.3">except ValueError қолдану</td>
+                    </tr>
+                    <tr>
+                        <td>ZeroDivisionError</td>
+                        <td data-i18="practice.12.solution.row2.2">0-ге бөлу</td>
+                        <td data-i18="practice.12.solution.row2.3">бөлу алдында тексеру</td>
+                    </tr>
+                    <tr>
+                        <td>FileNotFoundError</td>
+                        <td data-i18="practice.12.solution.row3.2">Файл жоқ</td>
+                        <td data-i18="practice.12.solution.row3.3">except арқылы өңдеу</td>
+                    </tr>
+                    <tr>
+                        <td>IndexError</td>
+                        <td data-i18="practice.12.solution.row4.2">Индекс диапазоннан тыс</td>
+                        <td data-i18="practice.12.solution.row4.3">диапазон тексеру</td>
+                    </tr>
+                    <tr>
+                        <td>TypeError</td>
+                        <td data-i18="practice.12.solution.row5.2">Қате тип</td>
+                        <td data-i18="practice.12.solution.row5.3">түрлендіру немесе тексеру</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 data-i18="practice.12.questions.title">9. Бақылау сұрақтары</h3>
+            <ul>
+                <p data-i18="practice.12.questions.1">1. try/except не үшін қолданылады?</p>
+                <p data-i18="practice.12.questions.2">2. finally блогының қызметі?</p>
+                <p data-i18="practice.12.questions.3">3. Көптеген except қолдануға бола ма?</p>
+                <p data-i18="practice.12.questions.4">4. Қате өңделмесе не болады?</p>
+                <p data-i18="practice.12.questions.5">5. try/except қолдану қай жерде қажет?</p>
+            </ul>
+
+            <div class="lecture-navigation">
+                <a href="practice_11.html" class="nav-button prev-button">←</a>
+
+                <a href="practice.html" class="page-number" data-i18="page-1">1</a>
+                <span class="dots">...</span>
+                <a href="practice_6.html" class="page-number" data-i18="page-6">6</a>
+                <a href="practice_7.html" class="page-number" data-i18="page-7">7</a>
+                <a href="practice_8.html" class="page-number" data-i18="page-8">8</a>
+                <a href="practice_9.html" class="page-number" data-i18="page-9">9</a>
+                <a href="practice_10.html" class="page-number" data-i18="page-10">10</a>
+                <a href="practice_11.html" class="page-number" data-i18="page-11">11</a>
+                <a href="practice_12.html" class="page-number current-page" data-i18="page-11">12</a>
+                <a href="practice_13.html" class="page-number" data-i18="page-11">13</a>
+
+                <a href="practice_13.html" class="nav-button next-button" data-i18="next-button">→</a>
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

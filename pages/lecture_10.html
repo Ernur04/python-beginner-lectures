@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="nav.lecture">Лекция</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lecture.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="content-wrapper">
+        <div class="lecture-page-header">
+            <h1 data-i18="lecture.title">Лекции по Python</h1>
+            <p data-i18="lecture.description">Изучайте Python шаг за шагом: от основ до профессионального уровня.</p>
+        </div>
+
+        <section class="lecture-section" id="lecture-10">
+            <h2 data-i18="lecture-10-title">10 лекция. Модульдер және стандартты кітапханалар</h2>
+            <img src="../image/10 lec.jpg" alt="Модульдер және стандартты кітапханалар" width="600">
+
+            <h3 data-i18="module-title">1. Модуль дегеніміз не?</h3>
+            <p data-i18="module-definition"><strong>Модуль</strong> (module) — бұл Python файлында орналасқан
+                функциялар, айнымалылар, класс және басқа код бөліктерінің жинағы.
+                Модульдер кодты құрылымдауға, қайта қолдануға және программаны бөліктерге бөлуге көмектеседі.</p>
+            <p data-i18="module-example-title">Мысал модуль:</p>
+            <pre><code>my_module.py:
+
+def hello():
+    print('Сәлем!')
+</code></pre>
+
+            <h3 data-i18="import-title">2. Модульді импорттау</h3>
+            <p data-i18="import-definition">Модульді импорттау тәсілдері:</p>
+            <ul>
+                <li data-i18="import-basic">import module_name</li>
+                <li data-i18="import-alias">import module_name as mn</li>
+                <li data-i18="import-function">from module_name import function</li>
+                <li data-i18="import-all">from module_name import *</li>
+            </ul>
+
+            <h3 data-i18="stdlib-title">3. Стандартты кітапханалар</h3>
+            <p data-i18="stdlib-definition">Python көптеген дайын кітапханалармен бірге келеді. Бұл кітапханалар
+                стандартты кітапханалар деп аталады және оларды орнатпай-ақ қолдануға болады.</p>
+            <table class="library-table">
+                <thead>
+                    <tr>
+                        <th data-i18="library">Кітапхана</th>
+                        <th data-i18="service">Қызметі</th>
+                        <th data-i18="example1">Мысалы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>math</td>
+                        <td data-i18="lib-math">Математикалық функциялар</td>
+                        <td><code>math.sqrt(25)</code></td>
+                    </tr>
+                    <tr>
+                        <td>random</td>
+                        <td data-i18="lib-random">Кездейсоқ мәндер генерациялау</td>
+                        <td><code>random.randint(1,10)</code></td>
+                    </tr>
+                    <tr>
+                        <td>datetime</td>
+                        <td data-i18="lib-datetime">Күн және уақытпен жұмыс</td>
+                        <td><code>datetime.datetime.now()</code></td>
+                    </tr>
+                    <tr>
+                        <td>os</td>
+                        <td data-i18="lib-os">Операциялық жүйемен әрекеттесу</td>
+                        <td><code>os.listdir()</code></td>
+                    </tr>
+                    <tr>
+                        <td>sys</td>
+                        <td data-i18="lib-sys">Python жүйелік параметрлері</td>
+                        <td><code>sys.version</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 data-i18="important-modules-title">4. Маңызды стандартты модульдер</h3>
+            <ul>
+                <li data-i18="mod-math">math — математикалық функциялар</li>
+                <li data-i18="mod-random">random — кездейсоқ сандар</li>
+                <li data-i18="mod-datetime">datetime — уақыт, күн</li>
+                <li data-i18="mod-os">os — файлдар және жүйе</li>
+                <li data-i18="mod-sys">sys — Python конфигурациясы</li>
+                <li data-i18="mod-json">json — JSON форматымен жұмыс</li>
+                <li data-i18="mod-statistics">statistics — статистикалық функциялар</li>
+            </ul>
+
+            <h3 data-i18="create-module-title">5. Модуль жасау және пайдалану</h3>
+            <p data-i18="create-module-definition">Модульді өзіңіз жасау үшін жай ғана .py кеңейтімі бар файл құрасыз
+                және оның ішінде функциялар, айнымалылар және кластар аласыз.</p>
+            <p data-i18="create-module-example-title">Мысал:</p>
+            <pre><code>my_math.py:
+
+def add(a, b):
+    return a + b
+
+main.py:
+
+import my_math
+print(my_math.add(5, 3))
+</code></pre>
+
+            <h3 data-i18="tasks-title6">6. Практикалық тапсырмалар</h3>
+            <ul>
+                <p data-i18="task-math">math модулін қолданып, √, sin, cos функцияларын қолданып есеп шығарыңыз.</p>
+                <p data-i18="task-random">random модулімен кездейсоқ пароль генераторы жасаңыз.</p>
+                <p data-i18="task-datetime">datetime модулімен ағымдағы күнді форматтап шығарыңыз.</p>
+                <p data-i18="task-own-module">Өз модуліңізді жасап, екі функция жазыңыз.</p>
+                <p data-i18="task-json">json модулімен сөздікті JSON файлына сақтаңыз.</p>
+            </ul>
+
+
+            <div class="lecture-navigation">
+                <a href="lecture_9.html" class="nav-button prev-button" data-i18="prev-button">←</a>
+
+                <a href="lecture.html" class="page-number" data-i18="page-1">1</a>
+                <span class="dots">...</span>
+
+                <a href="lecture_4.html" class="page-number" data-i18="page-4">4</a>
+                <a href="lecture_5.html" class="page-number" data-i18="page-5">5</a>
+                <a href="lecture_6.html" class="page-number" data-i18="page-6">6</a>
+                <a href="lecture_7.html" class="page-number" data-i18="page-7">7</a>
+                <a href="lecture_8.html" class="page-number" data-i18="page-8">8</a>
+                <a href="lecture_9.html" class="page-number" data-i18="page-9">9</a>
+                <a href="lecture_10.html" class="page-number current-page" data-i18="page-10">10</a>
+                <a href="lecture_11.html" class="page-number" data-i18="page-10">11</a>
+                <a href="lecture_12.html" class="page-number" data-i18="page-10">12</a>
+
+                <a href="lecture_11.html" class="nav-button next-button" data-i18="next-button">→</a>
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/translations.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="nav.practice">Практика</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/practice.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="page-title-placeholder">
+            <h2 data-i18="practice.title">Практические Задания</h2>
+            <p data-i18="practice.description">Скоро здесь будет доступен полный набор практических задач для отработки
+                навыков программирования.</p>
+        </div>
+
+        <section class="practice-section" id="practice-1">
+            <h2 data-i18="practice.1.title">ПРАКТИКАЛЫҚ ЖҰМЫС №1</h2>
+            <h2 data-i18="practice.1.topic">Тақырыбы: Python орнату және алғашқы бағдарлама жазу</h2>
+            <h3 data-i18="practice.1.method.title">Әдістемелік нұсқау</h3>
+            <h3 data-i18="practice.1.goal.title">1. Практикалық жұмыстың мақсаты</h3>
+            <ul>
+                <li data-i18="practice.1.goal.list.1">Студенттерге Python бағдарламалау тілін компьютерге орнатуды
+                    үйрету;</li>
+                <li data-i18="practice.1.goal.list.2">PyCharm немесе VS Code сияқты IDE орнату және бастапқы баптауды
+                    көрсету;</li>
+                <li data-i18="practice.1.goal.list.3">Алғашқы Python бағдарламасын жазу, іске қосу және қатесіз
+                    орындауға дағдыландыру;</li>
+                <li data-i18="practice.1.goal.list.4">Командалық жол (Terminal) арқылы Python жұмысын тексеру.</li>
+            </ul>
+            <h3 data-i18="practice.1.resources.title">2. Қажетті бағдарламалар мен ресурстар</h3>
+            <ul>
+                <li><span data-i18="practice.1.resources.list.1">Python 3.10+ (ресми сайт: </span><a
+                        href="https://www.python.org/" target="_blank">https://www.python.org/</a><span>)</span></li>
+                <li data-i18="practice.1.resources.list.2">IDE:</li>
+                <ul>
+                    <li data-i18="practice.1.resources.list.3">PyCharm Community Edition </li>
+                    <li data-i18="practice.1.resources.list.4">Visual Studio Code</li>
+                </ul>
+                <li data-i18="practice.1.resources.list.5">Қарапайым мәтіндік редактор (Notepad, Sublime Text)</li>
+                <li data-i18="practice.1.resources.list.6">Операциялық жүйе: Windows 10/11</li>
+            </ul>
+            <h3 data-i18="practice.1.theory.title">3. Теориялық бөлім (қысқаша)</h3>
+            <h4 data-i18="practice.1.theory.subtitle1">3.1 Python деген не?</h4>
+            <p data-i18="practice.1.theory.p1">Python — жоғары деңгейлі, оқуға жеңіл, әмбебап бағдарламалау тілі.</p>
+            <p data-i18="practice.1.theory.p2">Негізгі артықшылықтары:</p>
+            <ul>
+                <li data-i18="practice.1.theory.list.1">жеңіл синтаксис;</li>
+                <li data-i18="practice.1.theory.list.2">көп кітапханалар;</li>
+                <li data-i18="practice.1.theory.list.3">веб, деректер ғылымы, AI, автоматтандыруда кең қолданыс.</li>
+            </ul>
+            <h4 data-i18="practice.1.theory.subtitle2">3.2 Python орнату қадамдары</h4>
+            <ul>
+                <p><span data-i18="practice.1.install.step1">1. </span><a
+                        href="https://www.python.org/">https://www.python.org/</a><span
+                        data-i18="practice.1.install.step1.part2">→ <strong>Downloads</strong> → <strong>Python
+                            3.x</strong> нұсқасын жүктеу.</span>
+                </p>
+                <p data-i18="practice.1.install.step2">2. Орнату кезінде маңызды: <strong>✔ Add Python to PATH</strong>
+                    — міндетті түрде белгілеу!</p>
+                <p data-i18="practice.1.install.step3">3. <strong>Install Now</strong> → орнату аяқталған соң
+                    <strong>Close</strong> батырмасын басу.</p>
+            </ul>
+            <h4 data-i18="practice.1.theory.subtitle3">3.3 Орнатуды тексеру</h4>
+            <p data-i18="practice.1.check.p1"><strong>Командалық жолды (CMD / Terminal)</strong> ашып:</p>
+            <pre><code>python --version</code></pre>
+            <p data-i18="practice.1.check.p2">немесе</p>
+            <pre><code>python</code></pre>
+            <p data-i18="practice.1.check.p3">Жауап шықса, Python сәтті орнатылған.</p>
+            <h3 data-i18="practice.1.ide.title">4. IDE орнату және жоба құру</h3>
+            <h4 data-i18="practice.1.ide.subtitle1">4.1 PyCharm Community Edition</h4>
+            <ul>
+                <p><span data-i18="practice.1.ide.pycharm.step1">1. </span><a
+                        href="https://www.jetbrains.com/pycharm/download/?section=windows">https://www.jetbrains.com/pycharm/download/?section=windows</a><span
+                        data-i18="practice.1.ide.pycharm.step1.part2">
+                        → <strong>Download</strong></span></p>
+                <p data-i18="practice.1.ide.pycharm.step2">2. Орнату → Community Edition</p>
+                <p data-i18="practice.1.ide.pycharm.step3">3. PyCharm → <strong>New Project</strong></p>
+                <p data-i18="practice.1.ide.pycharm.step4">4. Project name: Python_Intro</p>
+                <p data-i18="practice.1.ide.pycharm.step5">5. Interpreter: Python 3.x таңдаңыз</p>
+                <p data-i18="practice.1.ide.pycharm.step6">6. <strong>Create</strong></p>
+            </ul>
+            <h4 data-i18="practice.1.ide.subtitle2">4.2 VS Code (балама нұсқа)</h4>
+            <ul>
+                <p data-i18="practice.1.ide.vscode.step1">1. VS Code жүктеу → орнату</p>
+                <p data-i18="practice.1.ide.vscode.step2">2. Extensions → <strong>Python</strong> модулін орнату</p>
+                <p data-i18="practice.1.ide.vscode.step3">3. File → New File → .py кеңейтуімен сақтау</p>
+            </ul>
+            <h3 data-i18="practice.1.prog.title">5. Алғашқы бағдарлама</h3>
+            <h4 data-i18="practice.1.prog.subtitle1">5.1 Код жазу</h4>
+            <p data-i18="practice.1.prog.p1">Жаңа файл ашыңыз → аты: <strong>hello.py</strong></p>
+            <p data-i18="practice.1.prog.p2">Код:</p>
+            <pre><code>print("Hello, Python!")</code></pre>
+            <h4 data-i18="practice.1.prog.subtitle2">5.2 Бағдарламаны іске қосу</h4>
+            <ul>
+                <li data-i18="practice.1.prog.run.1">PyCharm: <strong>Run → Run 'hello'</strong></li>
+                <li data-i18="practice.1.prog.run.2">VS Code: <strong>Run → Run Python File</strong></li>
+                <li data-i18="practice.1.prog.run.3">Терминалда:</li>
+            </ul>
+            <pre><code>python hello.py</code></pre>
+            <p data-i18="practice.1.prog.result">Нәтижесі:</p>
+            <pre><code>Hello, Python!</code></pre>
+            <h3 data-i18="practice.1.errors.title">6. Қателер және оларды түзету</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18="practice.1.errors.head.1">Қате түрі</th>
+                        <th data-i18="practice.1.errors.head.2">Себебі</th>
+                        <th data-i18="practice.1.errors.head.3">Шешімі</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-i18="practice.1.errors.row1.1">SyntaxError</td>
+                        <td data-i18="practice.1.errors.row1.2">Жазылу қатесі</td>
+                        <td data-i18="practice.1.errors.row1.3">Жақшалар, тырнақшаларды тексеру</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.1.errors.row2.1">NameError</td>
+                        <td data-i18="practice.1.errors.row2.2">Атауы анықталмаған айнымалы</td>
+                        <td data-i18="practice.1.errors.row2.3">Айнымалы атын дұрыс жазу</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.1.errors.row3.1">Python табылмады</td>
+                        <td data-i18="practice.1.errors.row3.2">PATH қосылмаған</td>
+                        <td data-i18="practice.1.errors.row3.3">Python-ды қайта орнату және PATH белгілеу</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 data-i18="practice.1.tasks.title">7. Практикалық тапсырмалар</h3>
+            <h4 data-i18="practice.1.tasks.task1.title">Тапсырма 1. Python орнату</h4>
+            <ul>
+                <li data-i18="practice.1.tasks.task1.list.1">Python 3.x нұсқасын жүктеп орнатыңыз</li>
+                <li data-i18="practice.1.tasks.task1.list.2">CMD арқылы версиясын тексеріңіз</li>
+                <li data-i18="practice.1.tasks.task1.list.3">Скриншот жасаңыз</li>
+            </ul>
+            <h4 data-i18="practice.1.tasks.task2.title">Тапсырма 2. Алғашқы бағдарлама</h4>
+            <p data-i18="practice.1.tasks.task2.p">Келесі мәтінді шығарыңыз:</p>
+            <pre data-i18="practice.1.tasks.task2.code">Мен Python тілін үйреніп жатырмын!</pre>
+            <h4 data-i18="practice.1.tasks.task3.title">Тапсырма 3. Айнымалыларды пайдалану</h4>
+            <p data-i18="practice.1.tasks.task3.p">Файлға төмендегі кодты жазыңыз:</p>
+            <pre><code>name = "Indira"
+age = 20
+print("Атым:", name)
+print("Жасым:", age)
+</code></pre>
+            <p data-i18="practice.1.tasks.task3.desc">Студент өз аты-жөнін енгізеді.</p>
+            <h4 data-i18="practice.1.tasks.task4.title">Тапсырма 4. Екі санды қосу</h4>
+            <p data-i18="practice.1.tasks.task4.desc">Пайдаланушыдан екі сан енгіздіріп, қосындысын шығаратын бағдарлама
+                жазыңыз.</p>
+            <h3 data-i18="practice.1.questions.title">8. Бақылау сұрақтары</h3>
+            <ul>
+                <p data-i18="practice.1.questions.1">1. Python тілінің негізгі артықшылықтары қандай?</p>
+                <p data-i18="practice.1.questions.2">2. PATH деген не және неге ол маңызды?</p>
+                <p data-i18="practice.1.questions.3">3. Терминалда Python версиясын қалай тексереміз?</p>
+                <p data-i18="practice.1.questions.4">4. <strong>print()</strong> функциясының қызметі қандай?</p>
+                <p data-i18="practice.1.questions.5">5. PyCharm IDE не үшін қолданылады?</p>
+            </ul>
+            <div class="lecture-navigation">
+                <a href="practice.html" class="page-number current-page" data-i18="page-1">1</a>
+                <a href="practice_2.html" class="page-number" data-i18="page-2">2</a>
+                <a href="practice_3.html" class="page-number" data-i18="page-3">3</a>
+                <a href="practice_4.html" class="page-number" data-i18="page-4">4</a>
+                <a href="practice_5.html" class="page-number" data-i18="page-5">5</a>
+                <a href="practice_6.html" class="page-number" data-i18="page-6">6</a>
+                <a href="practice_7.html" class="page-number" data-i18="page-7">7</a>
+                <a href="practice_8.html" class="page-number" data-i18="page-8">8</a>
+                <a href="practice_9.html" class="page-number" data-i18="page-9">9</a>
+                <a href="practice_10.html" class="page-number" data-i18="page-10">10</a>
+
+                <a href="practice_2.html" class="nav-button next-button" data-i18="next-button">→</a>
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

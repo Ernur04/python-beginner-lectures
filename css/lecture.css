@@ -1,0 +1,923 @@
+/* Общий стиль для заголовка страницы лекции */
+.lecture-page-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Заголовок */
+.lecture-page-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+/* Описание */
+.lecture-page-header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Контейнер навигации */
+.lecture-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Кнопки "←" и "→" */
+.lecture-navigation .nav-button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background-color: #4b79a1;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.lecture-navigation .nav-button:hover {
+    background-color: #35516d;
+}
+
+/* Номера страниц */
+.lecture-navigation .page-number {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.lecture-navigation .page-number:hover {
+    background-color: #d9e6f2;
+    color: #000;
+}
+
+/* Текущая страница */
+.lecture-navigation .current-page {
+    background-color: #4b79a1;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Жалпы секция стилі */
+.lecture-section {
+  background: #f9fafb;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 900px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Заголовки внутри лекции */
+.lecture-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #283e51;
+  border-bottom: 2px solid #4b79a1;
+  padding-bottom: 0.5rem;
+}
+
+.lecture-section h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #366994;
+}
+
+/* Основной текст */
+.lecture-section p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Списки */
+.lecture-section ul {
+  margin: 0 0 1rem 1.5rem;
+  padding: 0;
+}
+
+.lecture-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Кодовые блоки */
+.lecture-section pre {
+  background-color: #f7f9fc;
+  border: 1px solid #dce3eb;
+  border-radius: 6px;
+  padding: 0.8rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.lecture-section code {
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.95rem;
+  color: #2a4d69;
+}
+
+/* Практические задания */
+.lecture-section h3 + ul p {
+  background: #f0f6ff;
+  border-left: 4px solid #4b79a1;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 0.6rem;
+  border-radius: 4px;
+}
+
+/* Таблица для ООП ұғымдары */
+.oop-concepts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Заголовок таблицы */
+.oop-concepts-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.oop-concepts-table th {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Ячейки */
+.oop-concepts-table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #e0e6ed;
+  color: #333;
+}
+
+/* Чередование строк */
+.oop-concepts-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+/* Выделение при наведении */
+.oop-concepts-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.error-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.error-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.error-table th,
+.error-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.error-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.error-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.file-modes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.file-modes-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.file-modes-table th,
+.file-modes-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.file-modes-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.file-modes-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.library-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.library-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.library-table th,
+.library-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.library-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.library-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.library-table code {
+  background: #f0f6ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.dict-elements-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dict-elements-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.dict-elements-table th,
+.dict-elements-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.dict-elements-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.dict-elements-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.dict-elements-table code {
+  background: #f0f6ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.operators-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.operators-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.operators-table th,
+.operators-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.operators-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.operators-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.logic-operators-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.logic-operators-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.logic-operators-table th,
+.logic-operators-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.logic-operators-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.logic-operators-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.ifelse-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ifelse-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.ifelse-table th,
+.ifelse-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.ifelse-table pre {
+  background: #f7f9fc;
+  border: 1px solid #dce3eb;
+  border-radius: 6px;
+  padding: 0.6rem;
+  overflow-x: auto;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.95rem;
+}
+
+.logic-operators-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.logic-operators-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.logic-operators-table th,
+.logic-operators-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.logic-operators-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.logic-operators-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+.range-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.range-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.range-table th,
+.range-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.range-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.range-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.range-table code {
+  background: #f0f6ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.function-params-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.function-params-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.function-params-table th,
+.function-params-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.function-params-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.function-params-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.function-params-table code {
+  background: #f0f6ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.list-features-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.list-features-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.list-features-table th,
+.list-features-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.list-features-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.list-features-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.tuple-features-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tuple-features-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.tuple-features-table th,
+.tuple-features-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.tuple-features-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.tuple-features-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+.set-features-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.set-features-table thead {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #fff;
+}
+
+.set-features-table th,
+.set-features-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.set-features-table tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.set-features-table tbody tr:hover {
+  background-color: #eef5fb;
+  transition: background-color 0.3s ease;
+}
+
+/* ====================================
+   RESPONSIVE MEDIA QUERIES - LECTURE
+   ==================================== */
+
+/* Large Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .lecture-page-header {
+        padding: 1.8rem 1.5rem;
+    }
+
+    .lecture-page-header h1 {
+        font-size: 2rem;
+    }
+
+    .lecture-page-header p {
+        font-size: 1rem;
+    }
+
+    .lecture-navigation {
+        gap: 0.6rem;
+        margin: 1.8rem 0;
+    }
+
+    .lecture-navigation .nav-button {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .lecture-section {
+        padding: 2.5rem;
+        margin: 20px auto;
+    }
+
+    .lecture-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .lecture-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .oop-concepts-table,
+    .error-table,
+    .file-modes-table,
+    .library-table {
+        font-size: 0.95rem;
+    }
+
+    .oop-concepts-table th,
+    .oop-concepts-table td,
+    .error-table th,
+    .error-table td,
+    .file-modes-table th,
+    .file-modes-table td,
+    .library-table th,
+    .library-table td {
+        padding: 0.7rem 0.9rem;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .lecture-page-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .lecture-page-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .lecture-page-header p {
+        font-size: 1rem;
+    }
+
+    .lecture-navigation {
+        margin: 1.5rem 0;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+
+    .lecture-navigation .nav-button {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    .lecture-navigation .page-number {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .content-wrapper {
+        padding: 1.5rem 1rem;
+    }
+
+    .lecture-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .lecture-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .lecture-content p {
+        font-size: 0.95rem;
+    }
+
+    .lecture-content pre {
+        font-size: 0.85rem;
+        padding: 0.8rem;
+    }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    .lecture-page-header {
+        padding: 1.2rem 0.8rem;
+        margin: 0 auto 20px;
+    }
+
+    .lecture-page-header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .lecture-page-header p {
+        font-size: 0.9rem;
+    }
+
+    .lecture-navigation {
+        margin: 1.2rem 0;
+        gap: 0.2rem;
+    }
+
+    .lecture-navigation .nav-button {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    .lecture-navigation .page-number {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.8rem;
+        margin: 0.2rem;
+    }
+
+    .content-wrapper {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .lecture-content h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .lecture-content h3 {
+        font-size: 1.05rem;
+        margin-top: 1rem;
+    }
+
+    .lecture-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .lecture-content pre {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        overflow-x: auto;
+    }
+
+    .set-features-table {
+        margin: 1rem 0;
+        font-size: 0.85rem;
+    }
+
+    .set-features-table th,
+    .set-features-table td {
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+/* Small phones (480px and below) */
+@media (max-width: 480px) {
+    .lecture-page-header {
+        padding: 1rem 0.6rem;
+        margin: 15px auto;
+    }
+
+    .lecture-page-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .lecture-page-header p {
+        font-size: 0.85rem;
+    }
+
+    .lecture-navigation {
+        margin: 1rem 0;
+        gap: 0.1rem;
+    }
+
+    .lecture-navigation .nav-button {
+        padding: 0.35rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .lecture-navigation .page-number {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.75rem;
+        margin: 0.15rem;
+    }
+
+    .content-wrapper {
+        padding: 1rem 0.6rem;
+    }
+
+    .lecture-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .lecture-content h3 {
+        font-size: 0.95rem;
+    }
+
+    .lecture-content p {
+        font-size: 0.85rem;
+    }
+
+    .lecture-content pre {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .set-features-table {
+        font-size: 0.75rem;
+    }
+
+    .set-features-table th,
+    .set-features-table td {
+        padding: 0.5rem 0.6rem;
+    }
+}
+
+/* Extra small (360px and below) */
+@media (max-width: 360px) {
+    .lecture-page-header {
+        padding: 0.8rem 0.5rem;
+        margin: 10px auto;
+    }
+
+    .lecture-page-header h1 {
+        font-size: 1.1rem;
+    }
+
+    .lecture-page-header p {
+        font-size: 0.8rem;
+    }
+
+    .lecture-navigation {
+        gap: 0.05rem;
+    }
+
+    .lecture-navigation .nav-button {
+        padding: 0.3rem 0.4rem;
+        font-size: 0.75rem;
+    }
+
+    .lecture-navigation .page-number {
+        padding: 0.25rem 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    .content-wrapper {
+        padding: 0.8rem 0.5rem;
+    }
+
+    .lecture-content h2 {
+        font-size: 1rem;
+    }
+
+    .lecture-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .lecture-content p {
+        font-size: 0.8rem;
+    }
+}
+
+

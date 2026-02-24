@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="nav.practice">Практика</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/practice.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="page-title-placeholder">
+            <h2 data-i18="practice.title">Практические Задания</h2>
+            <p data-i18="practice.description">Скоро здесь будет доступен полный набор практических задач для отработки
+                навыков программирования.</p>
+        </div>
+
+        <section class="practice-section" id="practice-10">
+            <h2 data-i18="practice.10.title">ПРАКТИКАЛЫҚ ЖҰМЫС №10</h2>
+            <h2 data-i18="practice.10.topic">Тақырыбы: Модульдер мен кітапханаларды қолдану (import, Python libraries)
+            </h2>
+            <h3 data-i18="practice.10.goal.title">1. Практикалық жұмыстың мақсаты</h3>
+            <ul>
+                <li data-i18="practice.10.goal.list.1">Python тілінде модуль (module) ұғымын түсіну;</li>
+                <li data-i18="practice.10.goal.list.2">Стандартты кітапханаларды (math, random, datetime, т.б.)
+                    қолдануды үйрену;</li>
+                <li data-i18="practice.10.goal.list.3">Өз модулін құру және импорттау;</li>
+                <li data-i18="practice.10.goal.list.4">Модульдегі функцияларды шақыру және қайта пайдалану;</li>
+                <li data-i18="practice.10.goal.list.5">Практикалық есептерді кітапхана мүмкіндіктерімен тиімді шығару
+                    дағдысын қалыптастыру.</li>
+            </ul>
+            <h3 data-i18="practice.10.resources.title">2. Қажетті бағдарламалар</h3>
+            <ul>
+                <li data-i18="practice.10.resources.list.1">Python 3.10+</li>
+                <li data-i18="practice.10.resources.list.2">PyCharm / VS Code / Jupyter Notebook</li>
+            </ul>
+            <h3 data-i18="practice.10.theory.title">3. Теориялық бөлім</h3>
+            <h4 data-i18="practice.10.theory.subtitle1">3.1 Модуль деген не?</h4>
+            <p data-i18="practice.10.theory.module.what">Модуль — Python кодтары жазылған жеке файл. Оны басқа файлға
+                импорттап, оның ішіндегі функциялар мен айнымалыларды қолдануға болады.</p>
+            <p data-i18="practice.10.theory.module.import">Импорттау синтаксисі:</p>
+            <pre><code>import module_name</code></pre>
+            <p data-i18="practice.10.theory.module.or">Немесе:</p>
+            <pre><code>from module_name import function_name</code></pre>
+            <h4 data-i18="practice.10.theory.subtitle2">3.2 Стандартты кітапханаларды қолдану</h4>
+            <h4 data-i18="practice.10.theory.math.title">1) math модулі</h4>
+            <p data-i18="practice.10.theory.math.desc">Көптеген математикалық функциялар енгізілген.</p>
+            <pre><code>import math
+
+print(math.sqrt(16))     # түбір
+print(math.pow(2, 3))    # дәреже
+print(math.sin(math.pi)) # синус
+</code></pre>
+            <h4 data-i18="practice.10.theory.random.title">2) random модулі</h4>
+            <p data-i18="practice.10.theory.random.desc">Кездейсоқ сандар генерациясы.</p>
+            <pre><code>import random
+
+print(random.randint(1, 10))  # 1–10 аралығында кездейсоқ сан
+print(random.choice(["red", "blue", "green"]))  # тізімнен таңдау
+</code></pre>
+            <h4 data-i18="practice.10.theory.datetime.title">3) datetime модулі</h4>
+            <p data-i18="practice.10.theory.datetime.desc">Уақыт және дата.</p>
+            <pre><code>from datetime import datetime
+
+now = datetime.now()
+print(now)
+print(now.year, now.month, now.day)
+</code></pre>
+            <h4 data-i18="practice.10.theory.time.title">4) time модулі</h4>
+            <pre><code>import time
+
+print("Start")
+time.sleep(2)  # 2 секунд күту
+print("End")
+</code></pre>
+            <h4 data-i18="practice.10.theory.subtitle3">3.3 Өз модуліңді құру</h4>
+            <h4 data-i18="practice.10.theory.custom.step1">1-қадам. Файл құру</h4>
+            <p data-i18="practice.10.theory.custom.file1">Файл: <strong>my_module.py</strong></p>
+            <pre><code>def hello():
+    print("Hello from my module!")
+
+def add(a, b):
+    return a + b
+</code></pre>
+            <h4 data-i18="practice.10.theory.custom.step2">2-қадам. Басқа файлда импорттау</h4>
+            <p data-i18="practice.10.theory.custom.file2">Файл: <strong>main.py</strong></p>
+            <pre><code>import my_module
+
+my_module.hello()
+print(my_module.add(5, 7))
+</code></pre>
+            <h3 data-i18="practice.10.steps.title">4. Практикалық жұмыс қадамдары</h3>
+            <h4 data-i18="practice.10.steps.step1.title">1-қадам. Файл құру</h4>
+            <p data-i18="practice.10.steps.step1.desc">Файл: <strong>modules.py</strong></p>
+            <h4 data-i18="practice.10.steps.step2.title">2-қадам. math модулін қолдану</h4>
+            <p data-i18="practice.10.steps.step2.desc">Пайдаланушы сан енгізеді → квадрат түбірі мен дәрежесін шығару.
+            </p>
+            <h4 data-i18="practice.10.steps.step3.title">3-қадам. random модулін қолдану</h4>
+            <p data-i18="practice.10.steps.step3.desc">1–50 аралығында кездейсоқ сан шығару.</p>
+            <h4 data-i18="practice.10.steps.step4.title">4-қадам. datetime модулін тексеру</h4>
+            <p data-i18="practice.10.steps.step4.desc">Ағымдағы уақытты форматтап көрсету:</p>
+            <pre><code>now.strftime("%H:%M:%S")</code></pre>
+            <h4 data-i18="practice.10.steps.step5.title">5-қадам. Өз модулін импорттау</h4>
+            <h3 data-i18="practice.10.examples.title">5. Мысалдар</h3>
+            <h4 data-i18="practice.10.examples.example1.title">Мысал 1. Кездейсоқ сандар</h4>
+            <pre><code>for i in range(5):
+    print(random.randint(1, 100))
+</code></pre>
+            <h4 data-i18="practice.10.examples.example2.title">Мысал 2. Үшбұрыш гипотенузасы</h4>
+            <pre><code>import math
+
+a, b = 3, 4
+c = math.sqrt(a*a + b*b)
+print(c)
+</code></pre>
+            <h4 data-i18="practice.10.examples.example3.title">Мысал 3. Дата форматтау</h4>
+            <pre><code>from datetime import datetime
+
+now = datetime.now()
+print(now.strftime("Today: %d.%m.%Y"))
+</code></pre>
+            <h4 data-i18="practice.10.examples.example4.title">Мысал 4. Өз модулің</h4>
+            <p>my_module.py:</p>
+            <pre><code>def multiply(a, b):
+    return a * b
+</code></pre>
+            <p>main.py:</p>
+            <pre><code>from my_module import multiply
+print(multiply(4, 5))
+</code></pre>
+            <h3 data-i18="practice.10.tasks.title">6. Практикалық тапсырмалар</h3>
+            <h4 data-i18="practice.10.tasks.task1.title">Тапсырма 1. math модулі</h4>
+            <p data-i18="practice.10.tasks.task1.desc">Пайдаланушыдан сан енгізіңіз және табыңыз:</p>
+            <ul>
+                <li data-i18="practice.10.tasks.task1.list.1">квадрат түбірі</li>
+                <li data-i18="practice.10.tasks.task1.list.2">квадратқа шығару</li>
+                <li data-i18="practice.10.tasks.task1.list.3">синус/косинус</li>
+            </ul>
+            <h4 data-i18="practice.10.tasks.task2.title">Тапсырма 2. random модулі</h4>
+            <p data-i18="practice.10.tasks.task2.desc">Кездейсоқ:</p>
+            <ul>
+                <li data-i18="practice.10.tasks.task2.list.1">1–100 аралығында сан</li>
+                <li data-i18="practice.10.tasks.task2.list.2">Тізімнен кездейсоқ сөз таңдау</li>
+                <li data-i18="practice.10.tasks.task2.list.3">Кездейсоқ пароль генерациялау (5 символ)</li>
+            </ul>
+            <h4 data-i18="practice.10.tasks.task3.title">Тапсырма 3. datetime модулі</h4>
+            <p data-i18="practice.10.tasks.task3.desc">Шығарыңыз:</p>
+            <ul>
+                <li data-i18="practice.10.tasks.task3.list.1">ағымдағы жыл</li>
+                <li data-i18="practice.10.tasks.task3.list.2">ай</li>
+                <li data-i18="practice.10.tasks.task3.list.3">уақыт (сағат:минут:секунд)</li>
+            </ul>
+            <h4 data-i18="practice.10.tasks.task4.title">Тапсырма 4. time.sleep()</h4>
+            <p data-i18="practice.10.tasks.task4.desc">Бағдарлама 3 секунд күтсін, содан кейін:</p>
+            <pre>Сәлем студент!</pre>
+            <h4 data-i18="practice.10.tasks.task5.title">Тапсырма 5. Өз модулін құру</h4>
+            <p data-i18="practice.10.tasks.task5.desc">Функциялар:</p>
+            <ul>
+                <li>hello()</li>
+                <li>square(x)</li>
+                <li>calc(a, b, op)</li>
+            </ul>
+            <p data-i18="practice.10.tasks.task5.action">Басқа файлдан импорттап қолданыңыз.</p>
+            <h4 data-i18="practice.10.tasks.task6.title">Тапсырма 6. Кездейсоқ тізім</h4>
+            <p data-i18="practice.10.tasks.task6.desc">5 кездейсоқ саннан тұратын тізім құрыңыз.</p>
+            <h4 data-i18="practice.10.tasks.task7.title">Тапсырма 7. Кездейсоқ логин генераторы</h4>
+            <p data-i18="practice.10.tasks.task7.desc"><strong>random.choice()</strong> арқылы 6 символдан тұратын логин
+                жасаңыз.</p>
+            <h4 data-i18="practice.10.tasks.task8.title">Тапсырма 8. Секундты күн/сағатқа айналдыру</h4>
+            <p data-i18="practice.10.tasks.task8.desc">Datetime қолданбай есептеңіз.</p>
+            <h4 data-i18="practice.10.tasks.task9.title">Тапсырма 9. “Қазіргі жас” функциясы</h4>
+            <p data-i18="practice.10.tasks.task9.desc">Пайдаланушы туған жылын енгізеді → жасын есептеу.</p>
+            <h4 data-i18="practice.10.tasks.task10.title">Тапсырма 10. Модульдерді біріктіре қолдану</h4>
+            <p data-i18="practice.10.tasks.task10.desc"><strong>random, math, datetime</strong> қолданып шағын
+                бағдарлама жасаңыз.</p>
+            <h3 data-i18="practice.10.error.title">7. Қателер және шешімдер</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18="practice.10.error.head.1">Қате</th>
+                        <th data-i18="practice.10.error.head.2">Себебі</th>
+                        <th data-i18="practice.10.error.head.3">Шешімі</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ModuleNotFoundError</td>
+                        <td data-i18="practice.10.error.row1.2">Модуль атауы қате</td>
+                        <td data-i18="practice.10.error.row1.3">Файл атын тексеру</td>
+                    </tr>
+                    <tr>
+                        <td>ImportError</td>
+                        <td data-i18="practice.10.error.row2.2">Модуль ішіндегі функция жоқ</td>
+                        <td data-i18="practice.10.error.row2.3">Атауды тексеру</td>
+                    </tr>
+                    <tr>
+                        <td>NameError</td>
+                        <td data-i18="practice.10.error.row3.2">Функцияға дұрыс сілтеме жасалмаған</td>
+                        <td data-i18="practice.10.error.row3.3">module.function пішімі</td>
+                    </tr>
+                    <tr>
+                        <td data-i18="practice.10.error.row4.1">Путь табылмайды</td>
+                        <td data-i18="practice.10.error.row4.2">Файл дұрыс папкада емес</td>
+                        <td data-i18="practice.10.error.row4.3">Бір папкада болсын</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 data-i18="practice.10.questions.title">8. Бақылау сұрақтары</h3>
+            <ul>
+                <p data-i18="practice.10.questions.1">1. Модуль деген не?</p>
+                <p data-i18="practice.10.questions.2">2. import және from … import айырмашылығы?</p>
+                <p data-i18="practice.10.questions.3">3. math, random модульдерінің негізгі функциялары?</p>
+                <p data-i18="practice.10.questions.4">4. Өз модуліңді қалай жасайсың?</p>
+                <p data-i18="practice.10.questions.5">5. datetime.now() не береді?</p>
+            </ul>
+
+            <div class="lecture-navigation">
+                <a href="practice_9.html" class="nav-button prev-button">←</a>
+
+                <a href="practice.html" class="page-number" data-i18="page-1">1</a>
+                <span class="dots">...</span>
+                <a href="practice_4.html" class="page-number" data-i18="page-4">4</a>
+                <a href="practice_5.html" class="page-number" data-i18="page-5">5</a>
+                <a href="practice_6.html" class="page-number" data-i18="page-6">6</a>
+                <a href="practice_7.html" class="page-number" data-i18="page-7">7</a>
+                <a href="practice_8.html" class="page-number" data-i18="page-8">8</a>
+                <a href="practice_9.html" class="page-number" data-i18="page-9">9</a>
+                <a href="practice_10.html" class="page-number current-page" data-i18="page-10">10</a>
+                <a href="practice_11.html" class="page-number" data-i18="page-11">11</a>
+
+                <a href="practice_11.html" class="nav-button next-button" data-i18="next-button">→</a>
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

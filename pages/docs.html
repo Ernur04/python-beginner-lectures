@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="docs.pageTitle">Документация Python</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/docs.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="docs-wrapper">
+        <aside class="docs-sidebar">
+            <h3 data-i18="docs.sidebarTitle">Оглавление</h3>
+            <nav class="docs-nav">
+                <ul>
+                    <li><a href="#intro" data-i18="docs.link1">Введение в Python</a></li>
+                    <li><a href="#setup" data-i18="docs.link2">Установка и настройка</a></li>
+                    <li><a href="#syntax" data-i18="docs.link3">Базовый синтаксис</a></li>
+                    <li>
+                        <a href="#data-types" data-i18="docs.link4">Типы данных</a>
+                        <ul>
+                            <li><a href="#list" data-i18="docs.link4_1">Списки и кортежи</a></li>
+                            <li><a href="#dict" data-i18="docs.link4_2">Словари и множества</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#functions" data-i18="docs.link5">Функции и модули</a></li>
+                    <li><a href="#oop" data-i18="docs.link6">ООП в Python</a></li>
+                    <li><a href="#files" data-i18="docs.link7">Работа с файлами</a></li>
+                    <li><a href="#exceptions" data-i18="docs.link8">Обработка исключений</a></li>
+                    <li><a href="#stdlib" data-i18="docs.link9">Стандартная библиотека</a></li>
+                    <li><a href="#venv" data-i18="docs.link10">Виртуальные окружения</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="docs-content">
+            <h2 data-i18="docs.title">Официальная документация Python (для обучения)</h2>
+
+            <section id="intro">
+                <h3 data-i18="docs.section1.title">1. Введение: Что такое Python?</h3>
+                <p data-i18="docs.section1.p1">Python — это интерпретируемый, высокоуровневый язык программирования
+                    общего назначения, созданный Гвидо ван Россумом. Он был впервые выпущен в 1991 году.</p>
+                <p data-i18="docs.section1.p2">Философия дизайна Python подчеркивает удобочитаемость кода с помощью
+                    значительных отступов.</p>
+
+                <pre class="code-example"><code># Пример "Hello, World!"
+print("Hello, World!")</code></pre>
+            </section>
+
+            <section id="setup">
+                <h3 data-i18="docs.section2.title">2. Установка и Настройка</h3>
+                <p data-i18="docs.section2.p1">Рекомендуется использовать последнюю стабильную версию Python 3. Вы
+                    можете скачать установщик с официального сайта python.org.</p>
+                <p data-i18="docs.section2.p2">Обязательно отметьте "Add Python to PATH" (Добавить Python в PATH) во
+                    время установки в Windows.</p>
+
+                <h4 data-i18="docs.section2.subtitle1">Проверка установки</h4>
+                <pre class="code-example"><code>$ python --version
+Python 3.11.5</code></pre>
+            </section>
+
+            <section id="syntax">
+                <h3 data-i18="docs.section3.title">3. Базовый Синтаксис</h3>
+                <p data-i18="docs.section3.p1">В отличие от многих других языков, Python использует двоеточие (:) и
+                    отступы (обычно 4 пробела) для обозначения блоков кода.</p>
+
+                <h4 data-i18="docs.section3.subtitle1">Условные операторы</h4>
+                <pre class="code-example"><code>x = 10
+if x > 5:
+    print("x больше 5")
+elif x == 5:
+    print("x равно 5")
+else:
+    print("x меньше 5")</code></pre>
+            </section>
+
+            <section id="data-types">
+                <h3 data-i18="docs.section4.title">4. Типы данных и Структуры</h3>
+                <p data-i18="docs.section4.p1">Python имеет мощные встроенные структуры данных, такие как списки,
+                    словари, кортежи и множества.</p>
+
+                <h4 id="list" data-i18="docs.link4_1">Списки и кортежи</h4>
+                <pre class="code-example"><code># Список (изменяемый)
+my_list = [1, 2, 'a', 'b']
+
+# Кортеж (неизменяемый)
+my_tuple = (10, 20, 30)</code></pre>
+
+                <h4 id="dict" data-i18="docs.link4_2">Словари и множества</h4>
+                <pre class="code-example"><code># Словарь (ключ-значение)
+my_dict = {'name': 'Alice', 'age': 30}
+
+# Множество (уникальные элементы)
+my_set = {1, 2, 3, 3, 1} # Результат: {1, 2, 3}</code></pre>
+            </section>
+
+            <section id="functions">
+                <h3 data-i18="docs.section5.title">5. Функции и Модули</h3>
+                <p data-i18="docs.section5.p1">Функции определяются с помощью ключевого слова <code>def</code> и могут
+                    принимать аргументы, возвращать значения и иметь аннотации типов.</p>
+
+                <pre class="code-example"><code>def add_numbers(a: int, b: int) -> int:
+    """Возвращает сумму двух чисел."""
+    return a + b
+
+import math
+print(math.sqrt(16))</code></pre>
+            </section>
+
+            <section id="oop">
+                <h3 data-i18="docs.section6.title">6. Объектно-Ориентированное Программирование (ООП)</h3>
+                <p data-i18="docs.section6.p1">Python полностью поддерживает ООП, включая наследование, полиморфизм и
+                    инкапсуляцию.</p>
+
+                <pre class="code-example"><code>class Dog:
+    def __init__(self, name):
+        self.name = name
+    
+    def bark(self):
+        return f"{self.name} говорит 'Гав!'"
+
+my_dog = Dog("Rex")
+print(my_dog.bark())</code></pre>
+            </section>
+
+            <section id="files">
+                <h3 data-i18="docs.section7.title">7. Работа с файлами</h3>
+                <p data-i18="docs.section7.p1">Для работы с файлами в Python используется функция <code>open()</code>, а
+                    ключевое слово <code>with</code> гарантирует, что файл будет закрыт автоматически, даже если
+                    произойдет ошибка.</p>
+
+                <h4 data-i18="docs.section7.subtitle1">Чтение из файла</h4>
+                <pre class="code-example"><code>with open('data.txt', 'r') as file:
+    content = file.read()
+print(content)</code></pre>
+
+                <h4 data-i18="docs.section7.subtitle2">Запись в файл</h4>
+                <pre class="code-example"><code>with open('output.txt', 'w') as file:
+    file.write("Это новая строка.")</code></pre>
+            </section>
+
+            <section id="exceptions">
+                <h3 data-i18="docs.section8.title">8. Обработка исключений</h3>
+                <p data-i18="docs.section8.p1">Исключения (ошибки во время выполнения) обрабатываются с помощью блоков
+                    <code>try</code>, <code>except</code>, <code>else</code> и <code>finally</code>.</p>
+
+                <pre class="code-example"><code>try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Ошибка: Деление на ноль!")
+except Exception as e:
+    print(f"Другая ошибка: {e}")
+else:
+    print(f"Результат: {result}")
+finally:
+    print("Выполняется всегда.")</code></pre>
+            </section>
+
+            <section id="stdlib">
+                <h3 data-i18="docs.section9.title">9. Стандартная библиотека Python (Stdlib)</h3>
+                <p data-i18="docs.section9.p1">Stdlib — это обширный набор модулей, доступных "из коробки" (без
+                    дополнительной установки). Ключевые модули включают <code>os</code> (взаимодействие с ОС),
+                    <code>sys</code> (параметры среды), <code>json</code> (работа с JSON), <code>datetime</code> (работа
+                    со временем) и <code>re</code> (регулярные выражения).</p>
+                <p data-i18="docs.section9.p2">Пример использования модуля <code>datetime</code> для работы со временем:
+                </p>
+
+                <pre class="code-example"><code>import datetime
+
+now = datetime.datetime.now()
+print(now.strftime("%Y-%m-%d %H:%M:%S"))</code></pre>
+            </section>
+
+            <section id="venv">
+                <h3 data-i18="docs.section10.title">10. Виртуальные окружения (Virtual Environments)</h3>
+                <p data-i18="docs.section10.p1">Виртуальное окружение (venv) — это изолированная среда Python,
+                    позволяющая управлять зависимостями для разных проектов отдельно, избегая конфликтов версий.</p>
+
+                <h4 data-i18="docs.section10.subtitle1">Создание и активация</h4>
+                <p data-i18="docs.section10.p2">Чтобы создать окружение, используйте команду
+                    <code>python -m venv my_env</code>. Для активации в Windows:</p>
+                <pre class="code-example"><code>my_env\Scripts\activate</code></pre>
+
+                <p data-i18="docs.section10.p3">В Linux/macOS:</p>
+                <pre class="code-example"><code>source my_env/bin/activate</code></pre>
+            </section>
+
+        </main>
+    </div>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

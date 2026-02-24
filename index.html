@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="index.pageTitle">Python: Лекция и уроки для начинающих разработчиков</title>
+    <link rel="icon" type="image/x-icon" href="image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="pages/lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="pages/videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="pages/practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="pages/cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="python-banner">
+            <div class="banner-grid">
+                <!-- Левая часть: картинка -->
+                <div class="banner-image">
+                    <img src="image/python-hero.jpg" alt="Python Hero">
+                </div>
+
+                <!-- Правая часть: текст и кнопка -->
+                <div class="banner-content">
+                    <h1 data-i18="banner.title">Изучите Python: Ваш путь в мир IT!</h1>
+                    <p data-i18="banner.desc1">Начните программировать на самом популярном и универсальном языке в мире.
+                    </p>
+                    <p data-i18="banner.desc2">От веб-разработки до машинного обучения — <strong>Python</strong>
+                        открывает безграничные возможности.</p>
+
+                    <a href="pages/lecture.html" class="btn-primary" data-i18="banner.btn">Перейти к лекциям</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="lectures" class="lecture-section">
+            <!-- Заголовок секции -->
+            <div class="lecture-header">
+                <h2 data-i18="lectures.title">Лекции по Python</h2>
+                <a href="pages/lecture.html" class="more-btn" data-i18="lectures.more">Подробнее</a>
+            </div>
+
+            <!-- Сетка карточек -->
+            <div class="lecture-cards">
+                <!-- Карточка 1 -->
+                <article class="lecture-card">
+                    <h3 data-i18="lecture.card1.title">1 лекция. Введение в Python. Установка и IDE (IDLE, Jupyter,
+                        PyCharm)</h3>
+                    <p data-i18="lecture.card1.desc">Python — один из самых популярных, распространённых и универсальных
+                        языков программирования на сегодняшний день.</p>
+                    <a href="pages/lecture.html" class="lecture-btn" data-i18="lecture.card1.btn">Перейти к лекции</a>
+                </article>
+
+                <!-- Карточка 2 -->
+                <article class="lecture-card">
+                    <h3 data-i18="lecture.card2.title">2 лекция. Переменные и типы данных</h3>
+                    <p data-i18="lecture.card2.desc">Переменная — это контейнер, который временно хранит определённое
+                        значение в памяти.</p>
+                    <a href="pages/lecture_2.html" class="lecture-btn" data-i18="lecture.card2.btn">Перейти к лекции</a>
+                </article>
+
+                <!-- Карточка 3 -->
+                <article class="lecture-card">
+                    <h3 data-i18="lecture.card3.title">3 лекция. Операции и выражения</h3>
+                    <p data-i18="lecture.card3.desc">Выражение (expression) — это комбинация переменных, литералов и
+                        операторов, результатом которой является значение.</p>
+                    <a href="pages/lecture_3.html" class="lecture-btn" data-i18="lecture.card3.btn">Перейти к лекции</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="videolesson-preview" class="videolesson-section">
+            <div class="videolesson-header">
+                <h2 data-i18="video.title2">Видеоуроки по Python</h2>
+                <a href="pages/videolesson.html" class="more-btn" data-i18="video.more">Смотреть все</a>
+            </div>
+
+            <div class="videolesson-cards">
+                <!-- Видео 1 -->
+                <article class="videolesson-card">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/34Rp6KVGIEM"
+                        title="Python для начинающих" frameborder="0" allowfullscreen></iframe>
+                    <h3 data-i18="video.card1.title">Python для начинающих</h3>
+                </article>
+
+                <!-- Видео 2 -->
+                <article class="videolesson-card">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/CfqX2_xY8VQ"
+                        title="Работа со строками и данными" frameborder="0" allowfullscreen></iframe>
+                    <h3 data-i18="video.card2.title">Работа со строками и данными</h3>
+                </article>
+            </div>
+        </section>
+
+        <section id="cheatsheet-preview" class="cheatsheet-section">
+            <!-- Заголовок секции -->
+            <div class="cheatsheet-header">
+                <h2 data-i18="cheatsheet.title2">Шпаргалка по Python</h2>
+                <a href="pages/cheatsheet.html" class="more-btn" data-i18="cheatsheet.more">Открыть полную шпаргалку</a>
+            </div>
+
+            <!-- Сетка карточек -->
+            <div class="cheatsheet-cards">
+                <!-- Карточка 1 -->
+                <article class="cheatsheet-card">
+                    <h3 data-i18="cheatsheet.card1.title">Основные команды</h3>
+                    <p data-i18="cheatsheet.card1.desc"><code>print()</code>, <code>input()</code> — базовые функции
+                        ввода и вывода данных.</p>
+                </article>
+
+                <!-- Карточка 2 -->
+                <article class="cheatsheet-card">
+                    <h3 data-i18="cheatsheet.card2.title">Переменные и типы</h3>
+                    <p data-i18="cheatsheet.card2.desc"><code>int</code>, <code>float</code>, <code>str</code>,
+                        <code>bool</code> — основные встроенные типы данных.
+                    </p>
+                </article>
+
+                <!-- Карточка 3 -->
+                <article class="cheatsheet-card">
+                    <h3 data-i18="cheatsheet.card3.title">Условия и циклы</h3>
+                    <p data-i18="cheatsheet.card3.desc"><code>if/elif/else</code>, <code>for</code>, <code>while</code>
+                        — управление логикой программы.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <!-- Левая часть: картинка -->
+                <div class="about-image">
+                    <img src="image/about.png" alt="Наша команда">
+                </div>
+
+                <!-- Правая часть: текст -->
+                <div class="about-content">
+                    <h2 data-i18="about.title">О нас</h2>
+                    <p data-i18="about.text1">
+                        Мы создаём доступные и увлекательные материалы для изучения <strong>Python</strong>.
+                        Наша цель — помочь каждому освоить программирование шаг за шагом: от базовых команд до
+                        продвинутых технологий.
+                    </p>
+                    <p data-i18="about.text2">
+                        В команду входят преподаватели, практикующие разработчики и дизайнеры — всё для того, чтобы
+                        обучение было понятным, удобным и вдохновляющим.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Логотип и краткое описание -->
+            <div class="footer-logo">
+                <img src="image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+
+            <!-- Социальные сети -->
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="image/youtube.png" alt="YouTube" width="30" height="30"></a>
+                    <a href="#" title="GitHub"><img src="image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <!-- Полезные ссылки -->
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="pages/lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="pages/videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="pages/practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="pages/cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+
+            <!-- Дополнительные страницы -->
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="pages/history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="pages/docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="pages/faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Контакты -->
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+
+            <!-- Информация -->
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+
+        <!-- Подвал с авторскими правами -->
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

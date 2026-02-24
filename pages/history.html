@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="history.pageTitle">История Python</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/history.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section history-section">
+            <h2 data-i18="history.title">Краткая история языка Python</h2>
+
+            <div class="timeline-container">
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-i18="history.period1.title">1980-е: Идея и начало</h3>
+                        <p data-i18="history.period1.text">Python был задуман в конце 1980-х годов <strong>Гвидо ван
+                                Россумом</strong> (Guido van Rossum) в качестве преемника языка ABC, который был
+                            способен обрабатывать исключения и взаимодействовать с операционной системой Amoeba.</p>
+                        <p data-i18="history.period1.date">Декабрь 1989</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-i18="history.period2.title">1991: Рождение Python 0.9.0</h3>
+                        <p data-i18="history.period2.text">Гвидо публикует первую версию кода — <strong>Python
+                                0.9.0</strong>. В ней уже присутствовали классы с наследованием, обработка исключений,
+                            функции и основные типы данных: списки, словари и строки.</p>
+                        <p data-i18="history.period2.date">Февраль 1991</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-i18="history.period3.title">2000: Python 2.0</h3>
+                        <p data-i18="history.period3.text">В Python 2.0 появились важные функции, такие как
+                            <strong>сборка мусора</strong> (garbage collection) и поддержка <strong>Unicode</strong>.
+                            Это значительно повысило его популярность, особенно в академических кругах и стартапах.</p>
+                        <p data-i18="history.period3.date">Октябрь 2000</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-i18="history.period4.title">2008: Python 3.0 (Python 3000)</h3>
+                        <p data-i18="history.period4.text">Выходит <strong>Python 3.0</strong>, который был радикальным
+                            изменением. Он устранил многие недостатки дизайна и синтаксиса, но был несовместим с версией
+                            2.x, что вызвало долгий переходный период. Ключевое изменение — функция <code>print</code>
+                            стала оператором <code>print()</code>.</p>
+                        <p data-i18="history.period4.date">Декабрь 2008</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-i18="history.period5.title">2020: Окончание поддержки Python 2</h3>
+                        <p data-i18="history.period5.text">Официальная поддержка <strong>Python 2.7</strong> была
+                            окончательно прекращена, что побудило большинство разработчиков перейти на Python 3. С тех
+                            пор Python 3 является единственной поддерживаемой версией.</p>
+                        <p data-i18="history.period5.date">Январь 2020</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="history-conclusion">
+                <h3 data-i18="history.conclusion.title">Влияние и будущее</h3>
+                <p data-i18="history.conclusion.text">Python продолжает развиваться под руководством сообщества. Сегодня
+                    он доминирует в таких областях, как машинное обучение (TensorFlow, PyTorch) и наука о данных
+                    (Pandas, NumPy), а также остается одним из самых популярных языков для веб-разработки (Django,
+                    Flask).</p>
+                <a href="../index.html" class="btn btn-outline" data-i18="history.conclusion.back">Вернуться на
+                    Главную</a>
+            </div>
+
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/translations.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18="nav.lecture">Лекция</title>
+    <link rel="icon" type="image/x-icon" href="../image/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lecture.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/OIP-removebg-preview.png" alt="Logo" width="100" height="100">
+            <h1>Python</h1>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-lang">
+            <div class="lang-buttons" role="tablist" aria-label="Выбор языка">
+                <button class="lang-button" data-lang="kz" aria-pressed="false">KZ</button>
+                <button class="lang-button" data-lang="ru" aria-pressed="false">RU</button>
+                <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <button id="openModalBtn" class="action-button">
+                💾
+            </button>
+        </div>
+
+        <div id="fileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <h3>Выберите файл для скачивания</h3>
+
+                <h4 class="file-category">Лекции</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/Python_лекция.docx" download="Python_лекция.docx">Python_лекция(Docx)</a>
+                    </li>
+                    <li>
+                        <a href="../files/14 лекция.docx" download="14 лекция.docx">14 лекция(Docx)</a>
+                    </li>
+                </ul>
+
+                <h4 class="file-category">Практика</h4>
+                <ul class="file-list">
+                    <li>
+                        <a href="../files/ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx"
+                            download="ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15.docx">ПРАКТИКАЛЫҚ ЖҰМЫС ПАЙТОН 1-15(Docx)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="content-wrapper">
+        <div class="lecture-page-header">
+            <h1 data-i18="lecture.title">Лекции по Python</h1>
+            <p data-i18="lecture.description">Изучайте Python шаг за шагом: от основ до профессионального уровня.</p>
+        </div>
+
+        <section class="lecture-section" id="lecture-4">
+            <h2 data-i18="lecture-4-title">4 лекция. Шартты операторлар (if, elif, else)</h2>
+            <img src="../image/4 lecture 1.jpg" alt="Шартты операторлар" width="600">
+            <p data-i18="lecture-4-image-caption">📌 Сурет 1. Шартты операторлар құрылымы (орынбасар сурет).</p>
+
+            <h3 data-i18="conditional-title">1. Шартты оператор дегеніміз не?</h3>
+            <p data-i18="conditional-definition">Шартты оператор — белгілі бір шарттың True немесе False болуына
+                байланысты әртүрлі әрекеттерді орындауға мүмкіндік береді.</p>
+
+            <h3 data-i18="if-title">2. if операторы</h3>
+            <p data-i18="if-structure">Құрылымы:</p>
+            <ul>
+                <li data-i18="if-example-structure">if шарт:<br>әрекет</li>
+            </ul>
+            <p data-i18="if-example-title">Мысал:</p>
+            <pre><code>age = 18
+if age >= 18:
+    print('Сіз ересексіз.')
+</code></pre>
+
+            <h3 data-i18="ifelse-title">3. if…else операторы</h3>
+            <table class="ifelse-table">
+                <thead>
+                    <tr>
+                        <th data-i18="ifelse-structure">Құрылымы</th>
+                        <th data-i18="ifelse-example">Мысалы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <pre><code>if шарт: әрекет1
+else: әрекет2</code></pre>
+                        </td>
+                        <td>
+                            <pre><code>number = 5
+if number % 2 == 0:
+    print("Жұп")
+else:
+    print("Тақ")</code></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 data-i18="elif-title">4. elif операторы</h3>
+            <p data-i18="elif-definition">Бірнеше шартты тізбектей тексеру үшін қолданылады.</p>
+            <pre><code>if шарт1: әрекет1
+elif шарт2: әрекет2
+else: әрекет</code></pre>
+
+            <h3 data-i18="logic-title">5. Логикалық операторлар</h3>
+            <table class="logic-operators-table">
+                <thead>
+                    <tr>
+                        <th data-i18="operato2r">Оператор</th>
+                        <th data-i18="meaning2">Мағынасы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>and</td>
+                        <td data-i18="logic-and2">Екі шарт та True болса</td>
+                    </tr>
+                    <tr>
+                        <td>or</td>
+                        <td data-i18="logic-or2">Кемінде бір шарт True болса</td>
+                    </tr>
+                    <tr>
+                        <td>not</td>
+                        <td data-i18="logic-not2">Терістеу</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 data-i18="nested-title">6. Ішкі шарттар (nested if)</h3>
+            <p data-i18="nested-definition">if жасырын түрде басқа if ішінде қолданылуы мүмкін.</p>
+            <p data-i18="nested-example-title">Мысал:</p>
+            <pre><code>age = 25
+is_student = True
+if age > 18:
+    if is_student:
+        print('Студенттерге жеңілдік бар')
+    else:
+        print('Жеңілдік тек студенттерге')</code></pre>
+
+            <h3 data-i18="ternary-title">7. Тернарлық оператор</h3>
+            <p data-i18="ternary-definition">Қысқа шарт жазуға арналған нұсқа:<br>result = 'Жұп' if x % 2 == 0 else
+                'Тақ'</p>
+
+            <h3 data-i18="complex-title">8. Күрделі практикалық мысалдар</h3>
+            <ul>
+                <p data-i18="complex-example-1">Мысал 1: Екі санды салыстыру</p>
+                <p data-i18="complex-example-2">Мысал 2: Диапазонды тексеру</p>
+                <p data-i18="complex-example-3">Мысал 3: Логин/пароль тексеру</p>
+            </ul>
+
+            <h3 data-i18="tasks-title">9. Практикалық тапсырмалар</h3>
+            <ul>
+                <p data-i18="task-1">Жас санатына бөлу</p>
+                <p data-i18="task-2">Үш санның ең үлкенін табу</p>
+                <p data-i18="task-3">Баға енгізіп, баға деңгейін анықтау</p>
+                <p data-i18="task-4">Температураға байланысты кеңес</p>
+            </ul>
+
+
+            <div class="lecture-navigation">
+                <a href="lecture_3.html" class="nav-button prev-button" data-i18="prev-button">←</a>
+
+                <a href="lecture.html" class="page-number" data-i18="page-1">1</a>
+                <a href="lecture_2.html" class="page-number" data-i18="page-2">2</a>
+                <a href="lecture_3.html" class="page-number" data-i18="page-3">3</a>
+                <a href="lecture_4.html" class="page-number current-page" data-i18="page-4">4</a>
+                <a href="lecture_5.html" class="page-number" data-i18="page-5">5</a>
+                <a href="lecture_6.html" class="page-number" data-i18="page-6">6</a>
+                <a href="lecture_7.html" class="page-number" data-i18="page-7">7</a>
+                <a href="lecture_8.html" class="page-number" data-i18="page-8">8</a>
+                <a href="lecture_9.html" class="page-number" data-i18="page-9">9</a>
+                <a href="lecture_10.html" class="page-number" data-i18="page-10">10</a>
+
+                <a href="lecture_5.html" class="nav-button next-button" data-i18="next-button">→</a>
+            </div>
+        </section>
+
+    </main>
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Наверх">⬆️</button>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../image/OIP-removebg-preview.png" alt="Python Logo" width="60" height="60">
+                <div>
+                    <h3 data-i18="footer.logoTitle">Python Learning</h3>
+                    <p data-i18="footer.logoDesc">Изучай Python легко и эффективно — от основ до продвинутых тем.</p>
+                </div>
+            </div>
+            <div class="footer-social-section">
+                <h3 data-i18="footer.follow">Следите за нами</h3>
+                <div class="footer-social">
+                    <a href="#" title="YouTube"><img src="../image/youtube.png" alt="YouTube" width="30"
+                            height="30"></a>
+                    <a href="#" title="GitHub"><img src="../image/github.png" alt="GitHub" width="30" height="30"></a>
+                    <a href="#" title="Telegram"><img src="../image/telegram.png" alt="Telegram" width="30"
+                            height="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3 data-i18="footer.navigation">Навигация</h3>
+                <ul>
+                    <li><a href="../index.html" data-i18="nav.home">Главная</a></li>
+                    <li><a href="lecture.html" data-i18="nav.lecture">Лекция</a></li>
+                    <li><a href="videolesson.html" data-i18="nav.video">Видеоурок</a></li>
+                    <li><a href="practice.html" data-i18="nav.practice">Практика</a></li>
+                    <li><a href="cheatsheet.html" data-i18="nav.cheatsheet">Шпаргалка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18="footer.more">Больше информации</h3>
+                <ul>
+                    <li><a href="history.html" data-i18="footer.history">История</a></li>
+                    <li><a href="docs.html" data-i18="footer.docs">Документация</a></li>
+                    <li><a href="faq.html" data-i18="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18="footer.contact">Связаться</h3>
+                <p><span data-i18="footer.emailLabel">Email:</span> <a
+                        href="mailto:Karbozovaindira77@gmail.com">Karbozovaindira77@gmail.com</a></p>
+                <p><span data-i18="footer.phoneLabel">Телефон:</span> <a href="tel:+77075110152">+7 707 511 0152</a></p>
+            </div>
+            <div class="footer-info">
+                <h3 data-i18="footer.about">О сайте</h3>
+                <p data-i18="footer.aboutP1">Платформа для обучения Python с лекциями, видеоуроками и практическими
+                    заданиями.</p>
+                <p data-i18="footer.aboutP2">Подходит для новичков и опытных разработчиков.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18="footer.bottom1">&copy; 2025 Python Learning Platform. Все права защищены.</p>
+            <p data-i18="footer.bottom2">Для образовательных целей. Не является официальным сайтом Python.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
